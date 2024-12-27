@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\member\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\member\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform_ver1.1\\project_picturesgalleryplatform\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\member\\upload_transition.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform_ver1.1\\project_picturesgalleryplatform\\views\\member\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\member\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform_ver1.1\\project_picturesgalleryplatform\\views\\member\\upload_transition.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\member\\upload_transition.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\models\\uploadmodel\\userupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform_ver1.1\\project_picturesgalleryplatform\\models\\uploadmodel\\userupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\models\\uploadmodel\\userupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\models\\uploadmodel\\pictureinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform_ver1.1\\project_picturesgalleryplatform\\models\\uploadmodel\\pictureinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\models\\uploadmodel\\pictureinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedHeight": 211,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -40,46 +44,48 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Upload_transition.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload_transition.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload_transition.cshtml",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Member\\Upload_transition.cshtml",
-              "ToolTip": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload_transition.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload_transition.cshtml",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Member\\Upload_transition.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T12:08:20.437Z"
+              "WhenOpened": "2024-12-26T12:08:20.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Upload.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload.cshtml",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Member\\Upload.cshtml",
-              "ToolTip": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Views\\Member\\Upload.cshtml",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Member\\Upload.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAB4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-26T01:30:57.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MemberController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
-              "ToolTip": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwB8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:34:26.528Z"
+              "WhenOpened": "2024-12-24T07:34:26.528Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UserUpload.cs",
-              "DocumentMoniker": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\UserUpload.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\UserUpload.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Models\\UploadModel\\UserUpload.cs",
-              "ToolTip": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\UserUpload.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\UserUpload.cs",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Models\\UploadModel\\UserUpload.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAQwGIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -89,9 +95,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "pictureInformation.cs",
-              "DocumentMoniker": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\pictureInformation.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\pictureInformation.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Models\\UploadModel\\pictureInformation.cs",
-              "ToolTip": "C:\\Users\\user\\\u8077\u8A13-\u5B8F\u7881\u73ED\\\u5C08\u6848\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\pictureInformation.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform_Ver1.1\\Project_PicturesGalleryPlatform\\Models\\UploadModel\\pictureInformation.cs",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Models\\UploadModel\\pictureInformation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

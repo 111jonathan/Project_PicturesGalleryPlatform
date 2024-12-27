@@ -451,3 +451,8 @@ C:\Users\user\職訓-宏碁班\專案\Project_PicturesGalleryPlatform\Project_Pi
 C:\Users\user\職訓-宏碁班\專案\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\Users\user\職訓-宏碁班\專案\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\bin\Debug\net8.0\System.Private.Windows.Core.dll
 C:\Users\user\職訓-宏碁班\專案\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform_Ver1.1\Project_PicturesGalleryPlatform\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform_Ver1.1\Project_PicturesGalleryPlatform\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform_Ver1.1\Project_PicturesGalleryPlatform\bin\Debug\net8.0\System.Private.Windows.Core.dll
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform_Ver1.1\Project_PicturesGalleryPlatform\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform_Ver1.1\Project_PicturesGalleryPlatform\obj\Debug\net8.0\Project_PicturesGalleryPlatform.sourcelink.json

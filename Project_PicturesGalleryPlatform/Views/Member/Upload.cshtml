@@ -27,7 +27,6 @@
 
 @if (TempData["triggerAlert"] != null && (bool)TempData["triggerAlert"])
 {
-    // *可能要刪
     <script>
         var feedbackMessage = @Html.Raw(Json.Serialize(TempData["uploadFeedback"]));
         alert(feedbackMessage);
