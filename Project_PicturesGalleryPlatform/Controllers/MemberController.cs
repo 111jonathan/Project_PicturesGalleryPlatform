@@ -46,12 +46,12 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 else// 資料完整
                 {
                     userUpload.SaveUploadedFile(data);
-                    if (userUpload.ImageDataToDB(data))
+                    if (userUpload.ImageDataToDB(data))// 上傳成功
                     {
                         _AlertSetting("上傳成功!", "Member", "Member");
                         return RedirectToAction("Upload_transition");
                     }
-                    else
+                    else// 上傳失敗
                     {
                         _AlertSetting("伺服器端錯誤，上傳失敗");
                         return View();
@@ -84,7 +84,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
         /// <param name="str">顯示訊息</param>
         /// <param name="action">導向action</param>
         /// <param name="con">導向controller</param>
-
         private void _AlertSetting(object str, string action, string con)
         {
             TempData["uploadFeedback"] = str;
@@ -99,7 +98,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         {
             bool loginCon = Request.Cookies.ContainsKey("UserAccount");
             Console.WriteLine("測試 輸入1為已登入狀態 / 輸入其他按鍵為未登入狀態");
-            loginCon = Console.ReadLine()=="1"? true:false;// 測試用，之後要刪掉 
+            loginCon = Console.ReadLine()=="1";// 測試用，之後要刪掉 
             Console.WriteLine("MemberController.Upload() 測試中 conditionTemp: {0}", loginCon);
             if (loginCon) // 已登入
             {
