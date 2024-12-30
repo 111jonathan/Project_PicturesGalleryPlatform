@@ -96,7 +96,7 @@ namespace Project_PicturesGalleryPlatform.Models.UploadModel
                     }
                     //// 再將資料插入
                     
-                    goto skipInsert;// *測試用，之後要刪掉
+                    goto skipInsert;// *測試用，暫時以下封閉
                     commandString = @"INSERT INTO Pictures(id, title, tag, width, height) VALUES(@id, @title, @tag, @width, @height)";
                     using (SqlCommand sqlCommand = new(commandString, sqlConnection))
                     {

@@ -735,3 +735,7 @@ C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesG
 C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\obj\Debug\net8.0\Project_PicturesGalleryPlatform.pdb
 C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\obj\Debug\net8.0\Project_PicturesGalleryPlatform.genruntimeconfig.cache
 C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\obj\Debug\net8.0\ref\Project_PicturesGalleryPlatform.dll
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\bin\Debug\net8.0\Project_PicturesGalleryPlatform.staticwebassets.endpoints.json
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\obj\Debug\net8.0\staticwebassets\msbuild.Project_PicturesGalleryPlatform.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\USER\Documents\GitHub\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

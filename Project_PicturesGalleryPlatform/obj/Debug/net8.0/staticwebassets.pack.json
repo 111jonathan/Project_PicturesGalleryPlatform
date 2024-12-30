@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Project_PicturesGalleryPlatform.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Project_PicturesGalleryPlatform.bundle.scp.css"
+      "PackagePath": "staticwebassets\\Project_PicturesGalleryPlatform.l2knazgh13.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\css\\Login.css",
@@ -791,6 +791,10 @@
     {
       "Id": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Project_PicturesGalleryPlatform.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Project_PicturesGalleryPlatform.Microsoft.AspNetCore.StaticWebAssets.props",
