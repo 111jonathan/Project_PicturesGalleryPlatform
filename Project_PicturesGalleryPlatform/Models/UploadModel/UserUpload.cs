@@ -130,6 +130,5 @@ namespace Project_PicturesGalleryPlatform.Models.UploadModel
                 }
             }
         }
-            //// *資料安全驗證 錯誤攔截 程式碼整理
     }
 }

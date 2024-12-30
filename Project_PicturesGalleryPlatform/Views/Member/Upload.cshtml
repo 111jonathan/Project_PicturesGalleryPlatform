@@ -1,4 +1,4 @@
-﻿@model Project_PicturesGalleryPlatform.Models.UploadModel.pictureInformation;
+@model Project_PicturesGalleryPlatform.Models.UploadModel.pictureInformation;
 
 <h2>上傳您的圖片</h2>
 <h4>上傳您的圖片到圖庫平台，供其他使用者下載使用</h4>
@@ -27,7 +27,6 @@
 
 @if (TempData["triggerAlert"] != null && (bool)TempData["triggerAlert"])
 {
-    // *可能要刪
     <script>
         var feedbackMessage = @Html.Raw(Json.Serialize(TempData["uploadFeedback"]));
         alert(feedbackMessage);
