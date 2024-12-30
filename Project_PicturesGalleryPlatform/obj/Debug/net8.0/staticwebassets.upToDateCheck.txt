@@ -18,6 +18,7 @@ wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\css\tech.css
 wwwroot\css\Thank-You-Page-Template.css
+wwwroot\css\upload.css
 wwwroot\favicon.ico
 wwwroot\images\0fd3416c.jpeg
 wwwroot\images\125902.jpg
