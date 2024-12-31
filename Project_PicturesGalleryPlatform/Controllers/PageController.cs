@@ -38,7 +38,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         [HttpPost]
         public IActionResult GetImagesByFile(IFormFile uploadfile)
         {
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", uploadfile.FileName);
+            
             string output;
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
