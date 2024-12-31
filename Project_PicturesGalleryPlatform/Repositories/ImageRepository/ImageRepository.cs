@@ -23,13 +23,13 @@ namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
             var sqlQuery = "SELECT TOP 100 * FROM Pictures ORDER BY NEWID()";
             return ExecuteQuery(sqlQuery);
         }
-        public List<ImageDetails> GetImagesByKeyword(string keyword)
+        public List<ImageDetails> SearchImagesByKeyword(string keyword)
         {
             var sqlQuery = "SELECT * FROM Pictures WHERE title LIKE @SearchKeyword";
             return ExecuteQuery(sqlQuery, new { SearchKeyword = $"%{keyword}%" });
         }
 
-        public List<ImageDetails> GetRelatedImages(int id)
+        public List<ImageDetails> GetRelatedImagesById(int id)
         {
             var sqlQuery = "SELECT * FROM Pictures WHERE id != @Id AND theme = (SELECT theme FROM Pictures WHERE id = @Id)";
             return ExecuteQuery(sqlQuery, new { Id = id });
@@ -46,7 +46,7 @@ namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
             return ExecuteQuery(sqlQuery, new { Tag = tag });
         }
 
-        public List<ImageDetails> GetAccountsById(int id)
+        public List<ImageDetails> GetImagesByAccountId(int id)
         {
             var sqlQuery = "SELECT * FROM Pictures WHERE id = @id";
             return ExecuteQuery(sqlQuery, new { id });

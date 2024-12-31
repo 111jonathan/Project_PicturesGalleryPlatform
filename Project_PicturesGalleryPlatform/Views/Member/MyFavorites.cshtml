@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/member.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/custom-style.css" media="screen">
+    <style>
+        .heart {
+            font-size: 50px; /* 減小愛心圖標大小 */
+            cursor: pointer;
+            color: red;
+            position: relative;
+            z-index: 1000; /* 保證愛心圖示在其他元素上層 */
+        }
+    </style>
+}
+
+@section Script {
+    <script>
+        // 獲取愛心元素
+        const heart = document.getElementById('heart');
+
+        // 監聽點擊事件
+        heart.addEventListener('click', function () {
+            // 根據當前的類別切換空心和實心愛心
+            if (heart.classList.contains('far', 'fa-heart')) {
+                heart.classList.remove('far', 'fa-heart');
+                heart.classList.add('fas', 'fa-heart');  // 切換到實心愛心
+            } else {
+                heart.classList.remove('fas', 'fa-heart');
+                heart.classList.add('far', 'fa-heart');  // 切換到空心愛心
+            }
+        });
+    </script>
+}
+
+<i id="heart" class="far fa-heart heart"></i> <!-- 空心愛心 -->
+
+<section class="u-align-center u-clearfix u-container-align-center u-grey-80 u-section-2" id="sec-7cd4">
+    <h1 class="u-text u-text-default u-text-1">我的最愛</h1>
+    <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+        <div class="u-gallery-inner u-gallery-inner-1">
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="810" data-image-height="1080">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-8703831.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-1"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+                <div class="u-back-slide" data-image-width="1620" data-image-height="1080">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-929282.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-2"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+                <div class="u-back-slide" data-image-width="810" data-image-height="1080">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-8664598.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-3"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-4">
+                <div class="u-back-slide" data-image-width="1001" data-image-height="1500">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-2221879.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-4"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-5">
+                <div class="u-back-slide" data-image-width="1000" data-image-height="1500">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-3572989.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-5"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-6">
+                <div class="u-back-slide" data-image-width="720" data-image-height="1080">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-1845534.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-6"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item u-gallery-item-7">
+                <div class="u-back-slide" data-image-width="1200" data-image-height="1500">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-3443934.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-7"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="1000" data-image-height="1500">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-photo-9136322.jpeg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-8"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="2000" data-image-height="1333">
+                    <img class="u-back-image u-expanded" src="~/images/attractive-couple-man-woman-talking-urban-city-center.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-9"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="2000" data-image-height="1333">
+                    <img class="u-back-image u-expanded"
+                         src="~/images/low-angle-shot-tall-high-rise-modern-business-building-with-clear-sky.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-10"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="1280" data-image-height="1920">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-todd-trapani-3790058.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-11"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="1280" data-image-height="1707">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-toms-monteiro-4107897.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-12"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-alexander-isreb-1797418.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-13"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="1001" data-image-height="1500">
+                    <img class="u-back-image u-expanded"
+                         src="~/images/black-white-dramatic-landscapes-with-buildings-low-angle.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-14"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="2000" data-image-height="1333">
+                    <img class="u-back-image u-expanded" src="~/images/bussiness-people-working-team-office.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-15"></div>
+            </div>
+            <div class="u-effect-fade u-gallery-item">
+                <div class="u-back-slide" data-image-width="1920" data-image-height="1281">
+                    <img class="u-back-image u-expanded" src="~/images/pexels-lisa-fotios-1957478.jpg">
+                </div>
+                <div class="u-over-slide u-shading u-over-slide-16"></div>
+            </div>
+        </div>
+    </div>
+</section>

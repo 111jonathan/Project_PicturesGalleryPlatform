@@ -113,6 +113,10 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 return RedirectToAction("Upload_transition");
             }
         }
+        public IActionResult MyFavorites()
+        {
+            return View();
+        }
 
 
 

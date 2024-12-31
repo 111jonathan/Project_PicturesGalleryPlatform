@@ -18,20 +18,20 @@ namespace Project_PicturesGalleryPlatform.Services.ImageService
             _currentImageResults = _imageRepository.GetRandomImages();
             return _currentImageResults;
         }
-        public List<ImageDetails> GetImagesByKeyword(string keyword)
+        public List<ImageDetails> SearchImagesByKeyword(string keyword)
         {
-            _currentImageResults = _imageRepository.GetImagesByKeyword(keyword);
+            _currentImageResults = _imageRepository.SearchImagesByKeyword(keyword);
             return _currentImageResults;
         }
 
-        public List<ImageDetails> GetImagesByPage(int page, int pageSize)
+        public List<ImageDetails> GetImagesByPageNumber(int page, int pageSize)
         {
             return _currentImageResults?.Skip(page * pageSize).Take(pageSize).ToList() ?? new List<ImageDetails>();
         }
 
-        public List<ImageDetails> GetAccountsById(int id)
+        public List<ImageDetails> GetImagesByAccountId(int id)
         {
-            _currentImageResults = _imageRepository.GetAccountsById(id);
+            _currentImageResults = _imageRepository.GetImagesByAccountId(id);
             return _currentImageResults;
         }
         public List<ImageDetails> GetImagesByIds(List<int> ids)

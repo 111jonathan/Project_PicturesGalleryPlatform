@@ -22,7 +22,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         //點擊單照片
         public IActionResult PictureInfo(int id)
         {
-            var pictures = _imageService.GetAccountsById(id);
+            var pictures = _imageService.GetImagesByAccountId(id);
             ViewData["picture"] = pictures;
             return View();
         }

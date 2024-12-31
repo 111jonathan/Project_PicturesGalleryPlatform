@@ -18,7 +18,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
         public IActionResult Index()
         {
-            //var pictures = _imageService.GetAccountsById(1);
+            //var pictures = _imageService.GetImagesByAccountId(1);
             //ViewData["picture"] = pictures;
             //return View("../Page/PictureInfo");
             return View();
@@ -34,7 +34,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
             }
 
             ViewData["keyword"] = keyword;
-            var images = _imageService.GetImagesByKeyword(keyword);
+            var images = _imageService.SearchImagesByKeyword(keyword);
             return View("../Page/Result");
             
 
@@ -42,14 +42,14 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
 
 
-        public JsonResult GetImagesByPage(int page, int pageSize)
+        public JsonResult GetImagesByPageNumber(int page, int pageSize)
         {
             if (page < 0 || pageSize <= 0)
             {
                 return Json(new { error = "無效的頁面或每頁大小參數。" });
             }
 
-            var images = _imageService.GetImagesByPage(page, pageSize);
+            var images = _imageService.GetImagesByPageNumber(page, pageSize);
             return Json(images);
         }
 
