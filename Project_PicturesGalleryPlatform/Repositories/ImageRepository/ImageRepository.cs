@@ -4,7 +4,7 @@ using Project_PicturesGalleryPlatform.Models;
 
 namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
 {
-    public class ImageDatabaseRepository : IImageRepository
+    public class ImageRepository : IImageRepository
     {
         //private const string ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Database=Images;User ID=Test;Password=12345678;Trusted_Connection=True";
         private readonly string ConnectionString = "Server=tcp:test241214.database.windows.net,1433;Initial Catalog=Test;Persist Security Info=False;User ID=test;Password=Abcd1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
