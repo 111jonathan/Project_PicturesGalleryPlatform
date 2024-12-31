@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Project_PicturesGalleryPlatform.Services.ImageAnalysisService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using System.Diagnostics;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
@@ -9,11 +10,13 @@ namespace Project_PicturesGalleryPlatform.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IImageService _imageService;
+        private readonly IImageAnalysisService _imageAnalysisService;
 
-        public PageController(ILogger<HomeController> logger, IImageService imageService)
+        public PageController(ILogger<HomeController> logger, IImageService imageService, IImageAnalysisService imageAnalysisService)
         {
             _logger = logger;
             _imageService = imageService;
+            _imageAnalysisService = imageAnalysisService;
         }
 
         //點擊單照片
@@ -27,10 +30,10 @@ namespace Project_PicturesGalleryPlatform.Controllers
         //搜尋類別
         public IActionResult SearchTag(String tag)
         {
-            if (string.IsNullOrWhiteSpace(tag))
-            {
-                return View("Index", _imageService.GetRandomImages());
-            }
+            //if (string.IsNullOrWhiteSpace(tag))
+            //{
+            //    return View("Index", _imageService.GetRandomImages());
+            //}
             ViewData["tag"] = tag;
             var images = _imageService.GetAccountsByTag(tag);
             return View("../Page/Pagination");
@@ -38,26 +41,8 @@ namespace Project_PicturesGalleryPlatform.Controllers
         [HttpPost]
         public IActionResult GetImagesByFile(IFormFile uploadfile)
         {
-            
-            string output;
-            ProcessStartInfo startInfo = new ProcessStartInfo
-            {
-                FileName = @"C:\ProgramData\anaconda3\python.exe",
-                Arguments = @"C:\Users\USER\Desktop\image_similarity_search.py" + " " + filePath,
-                RedirectStandardOutput = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
-            };
-
-            using (Process process = Process.Start(startInfo))
-            {
-                using (System.IO.StreamReader reader = process.StandardOutput)
-                {
-                    output = reader.ReadToEnd().Split("\r")[0];
-                }
-            }
-            var images = _imageService.GetImagesByIds(output);
-            return View("../Page/Result");
+            var images =_imageAnalysisService.FindSimilarImagesByImage(uploadfile);
+            return View("../Page/Pagination");
         }
     }
 }

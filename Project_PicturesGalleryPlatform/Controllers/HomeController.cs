@@ -27,11 +27,11 @@ namespace Project_PicturesGalleryPlatform.Controllers
         [HttpPost]
         public IActionResult SearchImages(string keyword)
         {
-            if (string.IsNullOrWhiteSpace(keyword))
-            {
-                ViewData["ErrorMessage"] = "請輸入有效的關鍵字。";
-                return View("Index", _imageService.GetRandomImages());
-            }
+            //if (string.IsNullOrWhiteSpace(keyword))
+            //{
+            //    ViewData["ErrorMessage"] = "請輸入有效的關鍵字。";
+            //    return View("Index", _imageService.GetRandomImages());
+            //}
 
             ViewData["keyword"] = keyword;
             var images = _imageService.GetImagesByKeyword(keyword);
