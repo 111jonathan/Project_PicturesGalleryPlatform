@@ -18,13 +18,6 @@ namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
                 return connection.Query<ImageDetails>(sqlQuery, parameters).ToList();
             }
         }
-
-        public List<ImageDetails> GetRandomImages()
-        {
-            var sqlQuery = "SELECT TOP 100 * FROM Pictures ORDER BY NEWID()";
-            return ExecuteQuery(sqlQuery);
-        }
-
         public List<ImageDetails> GetImagesByKeyword(string keyword)
         {
             var sqlQuery = "SELECT * FROM Pictures WHERE title LIKE @SearchKeyword";
@@ -37,11 +30,10 @@ namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
             return ExecuteQuery(sqlQuery, new { Id = id });
         }
 
-        public List<ImageDetails> GetImagesByIds(string ids)
+        public List<ImageDetails> GetImagesByIds(List<int> ids)
         {
-            var idList = ids.Split(' ').Select(int.Parse).ToList();
             var sqlQuery = "SELECT * FROM Pictures WHERE id IN @Ids";
-            return ExecuteQuery(sqlQuery, new { Ids = idList });
+            return ExecuteQuery(sqlQuery, new { Ids = ids });
         }
         public List<ImageDetails> GetImagesByTag(string tag)
         {

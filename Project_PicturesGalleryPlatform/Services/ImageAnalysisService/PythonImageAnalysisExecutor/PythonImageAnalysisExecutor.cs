@@ -1,40 +1,38 @@
-﻿using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
-using System.Diagnostics;
-using System.Xml.Linq;
+﻿using System.Diagnostics;
 
 namespace Project_PicturesGalleryPlatform.Services.ImageAnalysisService.PythonImageAnalysisExecutor
 {
     public class PythonImageAnalysisExecutor : IPythonImageAnalysisExecutor
     {
-        private List<int> ExecutePythonScript(String exeName, String arg)
+        private List<int> ExecutePythonScript(String pythonPath, String args)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
-                FileName = exeName,
-                Arguments = arg,
+                FileName = pythonPath,
+                Arguments = args,
                 RedirectStandardOutput = true,
                 UseShellExecute = false,
                 CreateNoWindow = true
             };
 
-            using (Process process = Process.Start(startInfo))
+            using (Process proc = Process.Start(startInfo))
             {
-                using (System.IO.StreamReader reader = process.StandardOutput)
+                using (System.IO.StreamReader reader = proc.StandardOutput)
                 {
-                    String output = reader.ReadToEnd().Split("\r")[0];
-                    return output.Split(' ').Select(int.Parse).ToList();
+                    String result = reader.ReadToEnd().Split("\r")[0];
+                    return result.Split(' ').Select(int.Parse).ToList();
                 }
             }
         }
         public List<int> FindSimilarImageIds(IFormFile file)
         {
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", file.FileName);
-            return ExecutePythonScript("  ", filePath);
+            return ExecutePythonScript("pythonExePath", filePath);    // 待完成
         }
 
-        public List<int> FindSimilarTextIds(String text)
-        {
-            throw new NotImplementedException();
-        }
+        //public List<int> FindSimilarTextIds(String query)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

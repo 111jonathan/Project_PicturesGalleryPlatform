@@ -10,14 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//builder.Services.AddScoped<IMyFavoritesRepository, MyFavoritesRepository>();
+builder.Services.AddScoped<IMyFavoritesRepository, MyFavoritesRepository>();
 //builder.Services.AddScoped<IMyFavoritesService, MyFavoritesService>();
 
 builder.Services.AddScoped<IImageRepository, ImageRepository>();
 builder.Services.AddScoped<IImageService, ImageService>();
 
 //builder.Services.AddScoped<IImageAnalysisService, ImageAnalysisService>();
-//builder.Services.AddScoped<IPythonImageAnalysisExecutor, PythonImageAnalysisExecutor>();
+builder.Services.AddScoped<IPythonImageAnalysisExecutor, PythonImageAnalysisExecutor>();
 
 var app = builder.Build();
 
