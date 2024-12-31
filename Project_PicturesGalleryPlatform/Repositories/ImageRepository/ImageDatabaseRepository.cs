@@ -2,7 +2,7 @@
 using Microsoft.Data.SqlClient;
 using Project_PicturesGalleryPlatform.Models;
 
-namespace Project_PicturesGalleryPlatform.Repositories
+namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
 {
     public class ImageDatabaseRepository : IImageRepository
     {
@@ -52,7 +52,7 @@ namespace Project_PicturesGalleryPlatform.Repositories
         public List<ImageDetails> GetAccountsById(int id)
         {
             var sqlQuery = "SELECT * FROM Pictures WHERE id = @id";
-            return ExecuteQuery(sqlQuery, new { id = id });
+            return ExecuteQuery(sqlQuery, new { id });
         }
     }
 }

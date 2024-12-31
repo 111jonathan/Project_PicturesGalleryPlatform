@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Project_PicturesGalleryPlatform.Models;
-using Project_PicturesGalleryPlatform.Services;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {

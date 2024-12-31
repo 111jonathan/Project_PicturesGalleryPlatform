@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Project_PicturesGalleryPlatform.Services;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {

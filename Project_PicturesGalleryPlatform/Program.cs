@@ -1,5 +1,5 @@
-using Project_PicturesGalleryPlatform.Repositories;
-using Project_PicturesGalleryPlatform.Services;
+using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
+using Project_PicturesGalleryPlatform.Services.ImageService;
 
 var builder = WebApplication.CreateBuilder(args);
 
