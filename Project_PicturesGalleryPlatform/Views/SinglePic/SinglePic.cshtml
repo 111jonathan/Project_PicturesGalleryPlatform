@@ -98,7 +98,7 @@
                             <span>像素</span>
                         </div>
                         <div>
-                            <!-- Add to Favorites Button -->
+                            <!-- Add to Cart Button -->
                             <a href="#sec-2442"
                                class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-product-control u-btn-1 u-dialog-link u-payment-button btn-n1"
                                data-animation-name=""
@@ -111,9 +111,10 @@
                                 加入購物車
                             </a>
 
-                            <!-- Add to Cart Button -->
+                            <!-- Add to Favorites Button -->
                             <a href="#sec-2442"
                                class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-product-control u-btn-2 btn-n2"
+                               id="FavoriteButton"
                                data-animation-name=""
                                data-animation-duration="0"
                                data-animation-delay="0"
@@ -121,8 +122,34 @@
                                data-product-button-click-type="buy-now"
                                data-product-id="5"
                                data-product='{"id":"5","name":"-----","title":"圖片的名稱","description":"圖片的敘述","fullDescription":"圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述","price":"7","oldPrice":"10","quantity":1,"currency":"USD","sku":"","outOfStock":false,"isFeatured":false,"categories":[],"images":[{"url":"images/6f461f60.svg"}],"created":1733999548125,"updated":1734357654083,"isDefault":true,"categoriesData":[{"link":"./products/products.html#/1///","title":"Uncategorized"}]}'>
-                                加入我的最愛
+                                @if ((bool)ViewData["favorite"])
+                                {
+                                    <text>*已加入我的最愛</text> 
+                                } 
+                                else 
+                                { 
+                                    <text>加入我的最愛</text> 
+                                }
+
                             </a>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#triggerButton").click(function () {
+                                        $.ajax({
+                                            url: '/Home/TriggerCSharpAction',
+                                            type: 'POST',
+                                            success: function (response) {
+                                                alert('已成功觸發C#程式');
+                                            },
+                                            error: function (xhr, status, error) {
+                                                alert('發生錯誤: ' + error);
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+
 
                             <!-- Download Button -->
                             <a href="@pic.url"
