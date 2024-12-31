@@ -13,6 +13,11 @@ namespace Project_PicturesGalleryPlatform.Services.ImageService
         {
             _imageRepository = imageRepository;
         }
+        public List<ImageDetails> GetRandomImages()
+        {
+            _currentImageResults = _imageRepository.GetRandomImages();
+            return _currentImageResults;
+        }
         public List<ImageDetails> GetImagesByKeyword(string keyword)
         {
             _currentImageResults = _imageRepository.GetImagesByKeyword(keyword);

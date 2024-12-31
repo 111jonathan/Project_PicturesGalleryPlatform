@@ -18,6 +18,11 @@ namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
                 return connection.Query<ImageDetails>(sqlQuery, parameters).ToList();
             }
         }
+        public List<ImageDetails> GetRandomImages()
+        {
+            var sqlQuery = "SELECT TOP 100 * FROM Pictures ORDER BY NEWID()";
+            return ExecuteQuery(sqlQuery);
+        }
         public List<ImageDetails> GetImagesByKeyword(string keyword)
         {
             var sqlQuery = "SELECT * FROM Pictures WHERE title LIKE @SearchKeyword";

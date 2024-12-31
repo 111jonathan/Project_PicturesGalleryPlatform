@@ -30,10 +30,10 @@ namespace Project_PicturesGalleryPlatform.Controllers
         //搜尋類別
         public IActionResult SearchTag(String tag)
         {
-            //if (string.IsNullOrWhiteSpace(tag))
-            //{
-            //    return View("Index", _imageService.GetRandomImages());
-            //}
+            if (string.IsNullOrWhiteSpace(tag))
+            {
+                return View("Index", _imageService.GetRandomImages());
+            }
             ViewData["tag"] = tag;
             var images = _imageService.GetAccountsByTag(tag);
             return View("../Page/Pagination");
