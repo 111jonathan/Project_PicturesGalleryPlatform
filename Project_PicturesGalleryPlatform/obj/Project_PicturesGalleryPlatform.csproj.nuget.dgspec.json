@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tzuchun\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj": {}
+    "C:\\Users\\Tzuchun\\Source\\Repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tzuchun\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj": {
+    "C:\\Users\\Tzuchun\\Source\\Repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tzuchun\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj",
+        "projectUniqueName": "C:\\Users\\Tzuchun\\Source\\Repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj",
         "projectName": "Project_PicturesGalleryPlatform",
-        "projectPath": "C:\\Users\\Tzuchun\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj",
+        "projectPath": "C:\\Users\\Tzuchun\\Source\\Repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj",
         "packagesPath": "C:\\Users\\Tzuchun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tzuchun\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\obj\\",
+        "outputPath": "C:\\Users\\Tzuchun\\Source\\Repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tzuchun\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 ﻿using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
-using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
+
 
 namespace Project_PicturesGalleryPlatform.Services.ImageService
 {

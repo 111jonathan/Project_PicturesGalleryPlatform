@@ -1,6 +1,6 @@
 ﻿using Project_PicturesGalleryPlatform.Models;
 
-namespace Project_PicturesGalleryPlatform.Services
+namespace Project_PicturesGalleryPlatform.Services.ImageService
 {
     public interface IImageService
     {

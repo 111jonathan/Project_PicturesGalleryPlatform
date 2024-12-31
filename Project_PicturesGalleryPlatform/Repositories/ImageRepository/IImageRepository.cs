@@ -1,6 +1,6 @@
 ﻿using Project_PicturesGalleryPlatform.Models;
 
-namespace Project_PicturesGalleryPlatform.Repositories
+namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
 {
     public interface IImageRepository
     {
