@@ -56,10 +56,10 @@ namespace Project_PicturesGalleryPlatform.Controllers
             if (string.IsNullOrEmpty(userId))
                 return Json(new { success = false });
 
-            //if (category.Equals("fas"))
-            //    _myFavoritesService.RemoveFavorite(userId, id);
-            //else
-            //    _myFavoritesService.AddFavorite(userId, id);
+            if (category.Equals("fas"))
+                _myFavoritesService.RemoveFavorite(userId, id);
+            else
+                _myFavoritesService.AddFavorite(userId, id);
 
             return Json(new { success = true });
         }
