@@ -16,11 +16,14 @@ namespace Project_PicturesGalleryPlatform.Controllers
             _imageService = imageService;
         }
 
+
         public IActionResult Index()
         {
-            //var pictures = _imageService.GetImagesByAccountId(1);
-            //ViewData["picture"] = pictures;
-            //return View("../Page/PictureInfo");
+            var user = HttpContext.Request.Query["user"].ToString();
+            if (!string.IsNullOrEmpty(user))
+            {
+                HttpContext.Session.SetString("UserId", user);
+            }
             return View();
         }
 

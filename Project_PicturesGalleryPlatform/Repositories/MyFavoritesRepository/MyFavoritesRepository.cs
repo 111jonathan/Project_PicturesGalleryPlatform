@@ -26,13 +26,13 @@ namespace Project_PicturesGalleryPlatform.Repositories.MyFavoritesRepository
             ExecuteNonQuery(sqlQuery, new { UserAccount = userAccount, PictureId = pictureId });
         }
 
-        public int IsPictureInFavorites(string userAccount, int pictureId)
+        public bool IsPictureInFavorites(string userAccount, int pictureId)
         {
             var sqlQuery = "SELECT CASE WHEN EXISTS (SELECT 1 FROM favorite WHERE userAccount = @UserAccount AND pictureId = @PictureId) THEN 1 ELSE 0 END";
             using (var connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
-                return connection.ExecuteScalar<int>(sqlQuery, new { UserAccount = userAccount, PictureId = pictureId });
+                return connection.ExecuteScalar<int>(sqlQuery, new { UserAccount = userAccount, PictureId = pictureId }) == 1;
             }
         }
 

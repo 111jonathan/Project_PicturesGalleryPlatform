@@ -23,7 +23,7 @@ namespace Project_PicturesGalleryPlatform.Services.MyFavoritesService
         {
             _myFavoritesRepository.RemoveFavorite(userAccount, pictureId);
         }
-        public int IsPictureInFavorites(string userAccount, int pictureId)
+        public bool IsPictureInFavorites(string userAccount, int pictureId)
         {
             return _myFavoritesRepository.IsPictureInFavorites(userAccount, pictureId);
         }

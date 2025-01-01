@@ -122,10 +122,13 @@
                                data-product-id="5"
                                data-product='{"id":"5","name":"-----","title":"圖片的名稱","description":"圖片的敘述","fullDescription":"圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述","price":"7","oldPrice":"10","quantity":1,"currency":"USD","sku":"","outOfStock":false,"isFeatured":false,"categories":[],"images":[{"url":"images/6f461f60.svg"}],"created":1733999548125,"updated":1734357654083,"isDefault":true,"categoriesData":[{"link":"./products/products.html#/1///","title":"Uncategorized"}]}'>
                                 加入我的最愛
+
+
                             </a>
 
                             <!-- Download Button -->
                             <a href="@pic.url"
+                               download="@pic.url"
                                class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-product-control u-btn-3 "
                                data-animation-name=""
                                data-animation-duration="0"
@@ -135,6 +138,7 @@
                                data-product-id="5"
                                data-product='{"id":"5","name":"-----","title":"圖片的名稱","description":"圖片的敘述","fullDescription":"圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述","price":"7","oldPrice":"10","quantity":1,"currency":"USD","sku":"","outOfStock":false,"isFeatured":false,"categories":[],"images":[{"url":"images/6f461f60.svg"}],"created":1733999548125,"updated":1734357654083,"isDefault":true,"categoriesData":[{"link":"./products/products.html#/1///","title":"Uncategorized"}]}'>
                                 下載
+                                
                             </a>
 
                             <!-- Share Button -->
@@ -151,6 +155,7 @@
 }
 
 @section scripts {
+    <script defer src="https://static.addtoany.com/menu/page.js"></script>
     <script>
         $(function () {
             // 點擊圖片顯示大圖
@@ -171,7 +176,4 @@
             });
         });
     </script>
-}
-@{
-    <script defer src="https://static.addtoany.com/menu/page.js"></script>
 }
