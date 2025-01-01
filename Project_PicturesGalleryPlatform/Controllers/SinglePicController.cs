@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Project_PicturesGalleryPlatform.Services;
+using Project_PicturesGalleryPlatform.Services.ImageService;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {
@@ -16,13 +16,13 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
         public IActionResult SinglePic(int id)
         {
-            var pictures = _imageService.GetAccountsById(id);
+            var pictures = _imageService.GetImagesByAccountId(id);
             ViewData["picture"] = pictures;
             return View();
         }
         //public IActionResult SinglePic()
         //{
-        //    var pictures = _imageService.GetAccountsById(1);
+        //    var pictures = _imageService.GetImagesByAccountId(1);
         //    ViewData["picture"] = pictures;
         //    return View();
         //}
