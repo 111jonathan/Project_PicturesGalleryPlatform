@@ -1,9 +1,11 @@
 ﻿@{
+
     var pictures = ViewData["picture"] as List<ImageDetails>;
 }
 
 <head>
     <link rel="stylesheet" href="~/css/singlePic.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <style>
@@ -47,6 +49,22 @@
         margin: -55px 150px 0 1070px !important;
         padding: 13px 53px !important;
     }
+
+    .star-rating {
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+        .star-rating i {
+            font-size: 2rem;
+            /*color: gray;*/
+            transition: color 0.2s;
+        }
+
+            .star-rating i.filled {
+                /*color: gold;*/
+            }
 </style>
 
 @if (pictures != null && pictures.Any())
@@ -75,14 +93,14 @@
                              class="u-product-control u-product-price u-product-price-1">
                             <div class="u-price-wrapper u-spacing-10">
                                 <!--product_old_price-->
-                                <div class="u-old-price"
-                                     style="text-decoration: line-through !important">
-                                    $10.00
-                                </div>
                                 <!--/product_old_price--><!--product_regular_price-->
-                                <div class="u-price u-text-palette-2-base"
-                                     style="font-size: 1.5rem; font-weight: 700">
-                                    $7.00
+                                <div data-product-id="123" class="u-price u-text-palette-2-base star-rating"
+                                     style="font-size: 1.5rem; font-weight: 700" data-logged-in="@ViewData["user"]">
+                                    <i class="far fa-star" data-value="1"></i>
+                                    <i class="far fa-star" data-value="2"></i>
+                                    <i class="far fa-star" data-value="3"></i>
+                                    <i class="far fa-star" data-value="4"></i>
+                                    <i class="far fa-star" data-value="5"></i>
                                 </div>
                                 <!--/product_regular_price-->
                             </div>
@@ -122,10 +140,13 @@
                                data-product-id="5"
                                data-product='{"id":"5","name":"-----","title":"圖片的名稱","description":"圖片的敘述","fullDescription":"圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述","price":"7","oldPrice":"10","quantity":1,"currency":"USD","sku":"","outOfStock":false,"isFeatured":false,"categories":[],"images":[{"url":"images/6f461f60.svg"}],"created":1733999548125,"updated":1734357654083,"isDefault":true,"categoriesData":[{"link":"./products/products.html#/1///","title":"Uncategorized"}]}'>
                                 加入我的最愛
+
+
                             </a>
 
                             <!-- Download Button -->
                             <a href="@pic.url"
+                               download="@pic.url"
                                class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-product-control u-btn-3 "
                                data-animation-name=""
                                data-animation-duration="0"
@@ -135,6 +156,7 @@
                                data-product-id="5"
                                data-product='{"id":"5","name":"-----","title":"圖片的名稱","description":"圖片的敘述","fullDescription":"圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述圖片的敘述","price":"7","oldPrice":"10","quantity":1,"currency":"USD","sku":"","outOfStock":false,"isFeatured":false,"categories":[],"images":[{"url":"images/6f461f60.svg"}],"created":1733999548125,"updated":1734357654083,"isDefault":true,"categoriesData":[{"link":"./products/products.html#/1///","title":"Uncategorized"}]}'>
                                 下載
+                                
                             </a>
 
                             <!-- Share Button -->
@@ -151,6 +173,7 @@
 }
 
 @section scripts {
+    <script defer src="https://static.addtoany.com/menu/page.js"></script>
     <script>
         $(function () {
             // 點擊圖片顯示大圖
@@ -170,8 +193,7 @@
                 $(this).fadeOut(300);
             });
         });
+
     </script>
-}
-@{
-    <script defer src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="~/js/PicScore.js"></script>
 }

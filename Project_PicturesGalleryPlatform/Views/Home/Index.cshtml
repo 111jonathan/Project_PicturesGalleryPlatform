@@ -1,8 +1,13 @@
 ﻿@{
+
     ViewData["Title"] = "Home Page";
+    int n = 6;
 }
 <head>
     <link rel="stylesheet" href="~/css/index.css" media="screen">
+    <link rel="stylesheet" href="~/css/upload.css" media="screen">
+    @*<link rel="stylesheet" href="~/css/scenery.css" media="screen">*@
+    <link rel="stylesheet" href="~/css/ranking.css" media="screen">
 </head>
 
 
@@ -42,10 +47,14 @@
                 <p class="u-text u-text-default u-text-grey-50 u-text-4">上傳一張圖片吧！ </p>
             </div>
         </div>
-        <a href=""
-           class="u-border-grey-75 u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-5-dark-2 u-radius u-text-body-alt-color u-text-hover-white u-btn-2">
-            瀏覽檔案
-        </a>
+
+        <form method="post" action="/page/GetImagesByFile" id="file-form" enctype="multipart/form-data">
+            <a href="#" class="custom-file-input u-border-grey-75 u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-5-dark-2 u-radius u-text-body-alt-color u-text-hover-white u-btn-2" onclick="triggerFileInput()">瀏覽檔案</a>
+            <input type="file" id="file-input" name="uploadfile" onchange="displayFileName()" style="display:none;">
+            <span id="file-name" style="display:none; color:#F2F2F2;">未選擇檔案</span>
+            <input type="submit" id="submit-btn" hidden>
+        </form>
+        
         <a href=""
            class="u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-5-dark-2 u-radius u-text-body-alt-color u-text-hover-white u-btn-3">
             上傳檔案
@@ -172,6 +181,69 @@
         </div>
     </div>
 </section>
+    <section class="u-clearfix u-container-align-center u-valign-middle u-section-2" id="carousel_6b13">
+        <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn"
+            data-animation-duration="1500" data-animation-delay="500">
+            排行榜
+        </h2>
+        <div class="u-expanded-width u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-none u-width-fixed u-gallery-1">
+            <div class="u-gallery-inner u-gallery-inner-1">
+                <!-- Group 1 -->
+                <div class="u-gallery-group" style="display: flex;">
+                    <div class="u-effect-hover-zoom u-gallery-item">
+                        <div class="u-back-slide">
+                            <img class="u-back-image" src="~/images/modern-styled-entryway_23-2150695943.jpeg" alt="Image 1">
+                            <span class="image-number"></span>
+                        </div>
+                    </div>
+                    <div class="u-effect-hover-zoom u-gallery-item">
+                        <div class="u-back-slide">
+                            <img class="u-back-image" src="~/images/mockup-frames-living-room-interior-with-chair-decorscandinavian-style.jpg" alt="Image 2">
+                            <span class="image-number"></span>
+                        </div>
+                    </div>
+                    <div class="u-effect-hover-zoom u-gallery-item">
+                        <div class="u-back-slide">
+                            <img class="u-back-image" src="~/images/interior-design-with-photoframes-couch.jpg" alt="Image 3">
+                            <span class="image-number"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2 -->
+                <div class="u-gallery-group" style="display: none;">
+                    <div class="u-effect-hover-zoom u-gallery-item">
+                        <div class="u-back-slide">
+                            <img class="u-back-image" src="~/images/picture-frame-by-velvet-armchair.jpg" alt="Image 4">
+                            <span class="image-number"></span>
+                        </div>
+                    </div>
+                    <div class="u-effect-hover-zoom u-gallery-item">
+                        <div class="u-back-slide">
+                            <img class="u-back-image" src="~/images/new2.jpg" alt="Image 5">
+                        <span class="image-number"></span>
+                        </div>
+                    </div>
+                    <div class="u-effect-hover-zoom u-gallery-item">
+                        <div class="u-back-slide">
+                            <img class="u-back-image" src="~/images/multiethnic-designers-pose-against-window_273609-44877.jpg" alt="Image 6">
+                        <span class="image-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <a class="u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white" href="#" role="button">
+                <span aria-hidden="true">&lt;</span>
+            </a>
+            <a class="u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white" href="#" role="button">
+                <span aria-hidden="true">&gt;</span>
+            </a>
+        </div>
+    </section>
+
+
 <section class="u-align-center u-clearfix u-container-align-center u-section-4" id="carousel_2dab">
     <div class="u-clearfix u-sheet u-sheet-1">
         <span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1">
@@ -194,6 +266,7 @@
         <h5 class="u-custom-font u-font-montserrat u-text u-text-default u-text-2">第一組所有成員</h5>
     </div>
 </section>
+
 <section class="u-align-center u-clearfix u-container-align-center u-section-5" id="carousel_8f62">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-custom-font u-font-montserrat u-text u-text-1">關於收費... </h2>
@@ -244,6 +317,7 @@
         </a>
     </div>
 </section>
+
 <section class="u-align-center u-clearfix u-container-align-center u-grey-5 u-section-6" id="carousel_f5b8">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-text-1">聯絡我們</h1>
@@ -320,3 +394,77 @@
         </div>
     </div>
 </section>
+@section scripts {
+    <script>
+        // 觸發隱藏的檔案選擇框
+        function triggerFileInput() {
+            document.getElementById('file-input').click(); // 模擬點擊文件選擇框
+        }
+
+        // 顯示選擇的檔案名稱並提交表單
+        function displayFileName() {
+            const fileInput = document.getElementById('file-input');
+            const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '未選擇檔案';
+            const fileNameSpan = document.getElementById('file-name');
+
+            // 檢查是否選擇了檔案
+            if (fileInput.files.length > 0) {
+                // 顯示選擇的檔案名稱
+                fileNameSpan.textContent = fileName;
+                fileNameSpan.style.display = 'inline'; // 顯示檔案名稱的 span
+                // 自動提交表單
+                document.getElementById('file-form').submit();
+            } else {
+                // 隱藏檔案名稱的 span
+                fileNameSpan.style.display = 'none';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // 抓取所有的圖片元素
+            const images = document.querySelectorAll(".u-gallery-item .u-back-image");
+
+            // 遍歷每個圖片，並將圖片數量設置到對應的 <span> 中
+            images.forEach((image, index) => {
+                const imageNumberSpan = image.closest('.u-gallery-item').querySelector('.image-number');
+                if (imageNumberSpan) {
+                    imageNumberSpan.textContent = index + 1;  // 圖片編號從1開始
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryInner = document.querySelector(".u-gallery-inner-1");
+            const groups = galleryInner.querySelectorAll(".u-gallery-group");
+            let currentIndex = 0;
+
+            function showGroup(index) {
+                groups.forEach((group, i) => {
+                    group.style.display = i === index ? "flex" : "none";
+                });
+            }
+
+            function autoRotate() {
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % groups.length;
+                    showGroup(currentIndex);
+                }, 3000); // Rotate every 3 seconds
+            }
+
+            // Initialize gallery
+            showGroup(currentIndex);
+            autoRotate();
+
+            // Navigation
+            document.querySelector(".u-gallery-nav-prev").addEventListener("click", function () {
+                currentIndex = (currentIndex - 1 + groups.length) % groups.length;
+                showGroup(currentIndex);
+            });
+
+            document.querySelector(".u-gallery-nav-next").addEventListener("click", function () {
+                currentIndex = (currentIndex + 1) % groups.length;
+                showGroup(currentIndex);
+            });
+        });
+    </script>
+}
