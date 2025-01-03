@@ -1,0 +1,3 @@
+﻿功能, 檔案, 行數, 例外訊息
+以圖搜圖功能, PythonImageAnalysisExecutor.cs, line18, System.ComponentModel.Win32Exception: 'An error occurred trying to start process 'pythonExePath' with working directory 'C:\Users\user\職訓-宏碁班\專案\Project_PicturesGalleryPlatform\Project_PicturesGalleryPlatform'. 系統找不到指定的檔案。'
+以圖搜圖_預覽檔案, X, X, X

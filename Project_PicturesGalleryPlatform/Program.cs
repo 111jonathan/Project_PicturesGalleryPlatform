@@ -1,3 +1,9 @@
+using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
+using Project_PicturesGalleryPlatform.Repositories.MyFavoritesRepository;
+using Project_PicturesGalleryPlatform.Services.ImageAnalysisService.PythonImageAnalysisExecutor;
+using Project_PicturesGalleryPlatform.Services.ImageAnalysisService;
+using Project_PicturesGalleryPlatform.Services.ImageService;
+using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
 using Microsoft.EntityFrameworkCore;
 using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories;
@@ -10,13 +16,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews()
     .AddDataAnnotationsLocalization();
 
-// ¼ÓÈëÙYÁÏŽì·þ„Õ   David add the following 2 lines
+// ï¿½ï¿½ï¿½ï¿½ï¿½Yï¿½ÏŽï¿½ï¿½ï¿½ï¿½   David add the following 2 lines
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
-builder.Services.AddScoped<IImageRepository, ImageDatabaseRepository>();
+builder.Services.AddScoped<IMyFavoritesRepository, MyFavoritesRepository>();
+builder.Services.AddScoped<IMyFavoritesService, MyFavoritesService>();
+
+builder.Services.AddScoped<IImageRepository, ImageRepository>();
 builder.Services.AddScoped<IImageService, ImageService>();
+
+builder.Services.AddScoped<IImageAnalysisService, ImageAnalysisService>();
+builder.Services.AddScoped<IPythonImageAnalysisExecutor, PythonImageAnalysisExecutor>();
 
 var app = builder.Build();
 
