@@ -26,4 +26,6 @@ def dbPics (title, width, height, tag):
           
     cursor.commit()        
     conn.close()   
+    
+    return new_id
         

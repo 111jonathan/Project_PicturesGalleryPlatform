@@ -60,15 +60,18 @@ def imageSearch(keyword, counts, finishDn_images, finishDn_file, folder_path, db
                         img = Image.open(BytesIO(response.content))
                         if (image_url, img.width, img.height) not in finishDn_images:
                             # 確保先儲存圖片，再儲存資料至資料庫
-                            image_name = f"{keyword}_{downloaded_images + 1}.jpg"
+                            # image_name = f"{keyword}_{downloaded_images + 1}.jpg"
+                            image_name = f"{keyword}_{downloaded_images + 1}.webp"
                             image_path = os.path.join(folder_path, image_name)
-                            img.save(image_path) # 儲存圖片
+                            img.convert("RGB").save(image_path, format("webp"))
+                            # img.save(image_path) # 儲存圖片
                             
                             # 如果圖片儲存成功，才執行資料庫操作
                             db_id = dbPics(title_tag.text.split("-")[0], img.width, img.height, keyword)
                             
                             # 更新檔名以使用資料庫生成的id
-                            new_image_name = f"{db_id}.jpg"
+                            # new_image_name = f"{db_id}.jpg"
+                            new_image_name = f"{db_id}.webp"
                             new_image_path = os.path.join(folder_path, new_image_name)
                             
                             # 修改檔名為資料庫 id 命名格式
