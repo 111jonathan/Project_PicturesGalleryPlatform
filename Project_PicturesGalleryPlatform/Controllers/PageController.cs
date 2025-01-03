@@ -63,15 +63,5 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
             return Json(new { success = true });
         }
-        public bool IsImageLiked(int id)
-        {
-            string? userId = HttpContext.Session.GetString("UserId");
-
-            if (string.IsNullOrEmpty(userId))
-            {
-                return false;
-            }
-            return _myFavoritesService.IsPictureInFavorites(userId, id);
-        }
     }
 }
