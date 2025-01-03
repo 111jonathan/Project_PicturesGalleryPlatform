@@ -116,8 +116,8 @@ namespace Project_PicturesGalleryPlatform.Controllers
         {
             // 檢查是否登入
             bool loginCon = Request.Cookies.ContainsKey("UserAccount");
-            loginCon = true;// 測試用，之後要刪掉 
-            Console.WriteLine("MemberController.Upload() 測試中 conditionTemp: {0}", loginCon);
+            //loginCon = true;// 測試用，之後要刪掉 
+            //Console.WriteLine("MemberController.Upload() 測試中 conditionTemp: {0}", loginCon);
             if (loginCon) // 已登入
             {
                 //var userAccount = Request.Cookies["UserAccount"];
@@ -146,7 +146,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 }
             }
             else// 未登入
-            {// *測試中 暫時封閉
+            {// 開放
                 Console.WriteLine("請用戶先登入");
                 _AlertSetting("請先登入", "Login", "Login");
                 //return RedirectToAction("Login", "Login");
@@ -184,9 +184,9 @@ namespace Project_PicturesGalleryPlatform.Controllers
         public IActionResult Upload()
         {
             bool loginCon = Request.Cookies.ContainsKey("UserAccount");
-            Console.WriteLine("測試 輸入1為已登入狀態 / 輸入其他按鍵為未登入狀態");
-            loginCon = Console.ReadLine()=="1";// 測試用，之後要刪掉 
-            Console.WriteLine("MemberController.Upload() 測試中 conditionTemp: {0}", loginCon);
+            //Console.WriteLine("測試 輸入1為已登入狀態 / 輸入其他按鍵為未登入狀態");
+            //loginCon = Console.ReadLine()=="1";// 測試用，之後要刪掉 
+            //Console.WriteLine("MemberController.Upload() 測試中 conditionTemp: {0}", loginCon);
             if (loginCon) // 已登入
             {
                 TempData["triggerAlert"] = false;
@@ -196,7 +196,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
             {
                 Console.WriteLine("請用戶先登入");
                 _AlertSetting("請先登入", "Login", "Login");
-                //return RedirectToAction("Login", "Login");
                 return RedirectToAction("Upload_transition");
             }
         }
