@@ -4,11 +4,22 @@ using Project_PicturesGalleryPlatform.Services.ImageAnalysisService.PythonImageA
 using Project_PicturesGalleryPlatform.Services.ImageAnalysisService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
+using Microsoft.EntityFrameworkCore;
+using Project_PicturesGalleryPlatform.Models;
+using Project_PicturesGalleryPlatform.Repositories;
+using Project_PicturesGalleryPlatform.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddDataAnnotationsLocalization();
+
+// �����Y�ώ����   David add the following 2 lines
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 builder.Services.AddScoped<IMyFavoritesRepository, MyFavoritesRepository>();
 builder.Services.AddScoped<IMyFavoritesService, MyFavoritesService>();
