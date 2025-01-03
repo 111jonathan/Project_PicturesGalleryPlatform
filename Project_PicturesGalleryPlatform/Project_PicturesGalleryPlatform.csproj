@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\PicSocre\" />
     <Folder Include="wwwroot\exe\" />
   </ItemGroup>
 
