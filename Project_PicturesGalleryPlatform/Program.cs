@@ -1,10 +1,19 @@
+using Microsoft.EntityFrameworkCore;
+using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories;
 using Project_PicturesGalleryPlatform.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddDataAnnotationsLocalization();
+
+// 加入資料庫服務   David add the following 2 lines
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 builder.Services.AddScoped<IImageRepository, ImageDatabaseRepository>();
 builder.Services.AddScoped<IImageService, ImageService>();

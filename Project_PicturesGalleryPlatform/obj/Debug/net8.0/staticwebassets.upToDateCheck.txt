@@ -138,6 +138,7 @@ wwwroot\images\young-woman-arranging-table-rest.jpg
 wwwroot\js\infinite-scroll.js
 wwwroot\js\nicepage.js
 wwwroot\js\site.js
+wwwroot\js\validation.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
