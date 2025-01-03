@@ -1,46 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\repositories\\imagedatabaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\repositories\\imagedatabaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform-branch_tzuchun - ver1\\project_picturesgalleryplatform\\wwwroot\\js\\picscore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\js\\picscore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\food\\food.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\food\\food.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\member\\member.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\member\\member.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform-branch_tzuchun - ver1\\project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform-branch_tzuchun - ver1\\project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform-branch_tzuchun - ver1\\project_picturesgalleryplatform\\repositories\\iratingservice\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\repositories\\iratingservice\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform-branch_tzuchun - ver1\\project_picturesgalleryplatform\\repositories\\iratingservice\\iratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\repositories\\iratingservice\\iratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform-branch_tzuchun - ver1\\project_picturesgalleryplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,128 +34,80 @@
       "DocumentGroups": [
         {
           "DockedHeight": 211,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImageDatabaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Repositories\\ImageDatabaseRepository.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Repositories\\ImageDatabaseRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Repositories\\ImageDatabaseRepository.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Repositories\\ImageDatabaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:26:21.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Food.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Food\\Food.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Food\\Food.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Food\\Food.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Food\\Food.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABmAAAAAAAAAA==",
+              "Title": "SinglePic.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAmwHsAAAC5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T08:05:21.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.css",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\css\\Login.css",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\css\\Login.css",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\css\\Login.css",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\css\\Login.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-23T08:03:18.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T08:01:57.116Z"
+              "WhenOpened": "2025-01-03T05:49:49.542Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Member.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Member\\Member.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Member\\Member.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Member\\Member.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Member\\Member.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T07:59:52.695Z"
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Program.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Program.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T05:35:59.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SinglePic.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T07:58:26.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJgAAACfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T07:55:34.063Z"
+              "DocumentIndex": 4,
+              "Title": "IRatingService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T05:30:07.313Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T07:55:00.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SinglePicController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "RatingService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA0wDUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T07:54:42.24Z"
+              "WhenOpened": "2025-01-03T05:30:11.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T07:52:07.798Z"
+              "DocumentIndex": 0,
+              "Title": "PicScore.js",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwGoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-03T05:24:11.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SinglePicController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform-branch_tzuchun - Ver1\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwEQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T05:20:44.618Z"
             }
           ]
         }
