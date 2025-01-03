@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Services.ImageService;
+using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {
@@ -9,11 +10,13 @@ namespace Project_PicturesGalleryPlatform.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IImageService _imageService;
+        private readonly IRatingService _ratingService;
 
-        public HomeController(ILogger<HomeController> logger, IImageService imageService)
+        public HomeController(ILogger<HomeController> logger, IImageService imageService, IRatingService ratingService)
         {
             _logger = logger;
             _imageService = imageService;
+            _ratingService = ratingService;
         }
 
 
@@ -24,6 +27,8 @@ namespace Project_PicturesGalleryPlatform.Controllers
             {
                 HttpContext.Session.SetString("UserId", user);
             }
+            var totalScores = _ratingService.GetUserTotalScore();
+            ViewData["TotalScores"] = totalScores;
             return View();
         }
 
