@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Tzuchun\\source\\repos\\Project_PicturesGalleryPlatform\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\source\\repos\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\wwwroot\\exe\\image_similarity_search.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\exe\\image_similarity_search.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\source\\repos\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\services\\imageanalysisservice\\pythonimageanalysisexecutor\\pythonimageanalysisexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\services\\imageanalysisservice\\pythonimageanalysisexecutor\\pythonimageanalysisexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\source\\repos\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\services\\imageanalysisservice\\imageanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\services\\imageanalysisservice\\imageanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\source\\repos\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\source\\repos\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 211,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -17,11 +38,76 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "image_similarity_search.py",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\exe\\image_similarity_search.py",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\exe\\image_similarity_search.py",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\exe\\image_similarity_search.py",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\exe\\image_similarity_search.py",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-01-03T04:06:02.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PythonImageAnalysisExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\PythonImageAnalysisExecutor\\PythonImageAnalysisExecutor.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\PythonImageAnalysisExecutor\\PythonImageAnalysisExecutor.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\PythonImageAnalysisExecutor\\PythonImageAnalysisExecutor.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\PythonImageAnalysisExecutor\\PythonImageAnalysisExecutor.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T03:40:24.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImageAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T03:40:15.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwDsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T12:13:40.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FoodController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\FoodController.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\FoodController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\FoodController.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\FoodController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T12:13:39.256Z",
+              "EditorCaption": ""
             }
           ]
         }

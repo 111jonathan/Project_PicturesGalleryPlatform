@@ -28,14 +28,18 @@ namespace Project_PicturesGalleryPlatform.Services.ImageAnalysisService.PythonIm
         {
             var rootPath = Directory.GetCurrentDirectory();
             var filePath = Path.Combine(rootPath, "wwwroot", "uploads", file.FileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                file.CopyTo(fileStream);
+                fileStream.Flush();
+            }
             var pythonExePath = Path.Combine(rootPath, "wwwroot", "exe", "image_similarity_search.exe");
             var testImagesPath = Path.Combine(rootPath, "wwwroot", "testImages");
             var featureCachePath = Path.Combine(rootPath, "wwwroot", "features_cache");
  
-            String arguments = $" {filePath} {testImagesPath} {featureCachePath}";
+            String arguments = $"{filePath} {testImagesPath} {featureCachePath}";
             return ExecutePythonScript(pythonExePath, arguments);
         }
-
         //public List<int> FindSimilarTextIds(String query)
         //{
         //    throw new NotImplementedException();
