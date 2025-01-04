@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Services.ImageService;
+using Project_PicturesGalleryPlatform.Models.AIPicturesModels;
 
 
 namespace Project_PicturesGalleryPlatform.Controllers
@@ -47,10 +48,23 @@ namespace Project_PicturesGalleryPlatform.Controllers
             ViewData["keyword"] = keyword;
             var images = _imageService.SearchImagesByKeyword(keyword);
             return View("../Page/Result");
-            
-
         }
 
+
+        [HttpPost]
+        public IActionResult AIPictures(string keyword)
+        {
+            if (string.IsNullOrWhiteSpace(keyword))
+            {// 既ぃ钡
+                TempData["feedbackMessage"] = "叫块Τ闽龄";
+                TempData["action"] = "Index";
+                TempData["controller"] = "Home";
+                return RedirectToAction("TransitionPage", "Universal");
+            }
+            Console.WriteLine("钡Μkeyword: {0}", keyword);
+            TempData["keyword_AI"] = keyword;
+            return View("../Page/Result_AI");
+        }
 
 
         public JsonResult GetImagesByPageNumber(int page, int pageSize)
@@ -76,8 +90,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
             {
                 Response.Cookies.Delete("UserAccount"); // 刪除 UserAccount 的 Cookie
             }
-            return RedirectToAction("Index", "Home"); // 登出後導向首頁
+            return RedirectToAction("Index", "Home"); // 登出後導向首?
         }
-
     }
 }

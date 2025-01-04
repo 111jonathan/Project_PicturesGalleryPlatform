@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var page = 0;
-    var pageSize = 40;
+    var pageSize = 4;
     var isLoading = false;
 
     function loadItems() {
