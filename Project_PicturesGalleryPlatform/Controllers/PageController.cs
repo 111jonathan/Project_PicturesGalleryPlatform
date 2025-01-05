@@ -37,26 +37,27 @@ namespace Project_PicturesGalleryPlatform.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult GetImagesByFile(IFormFile uploadfile)
-        {
-            var images =_imageAnalysisService.FindSimilarImagesByImage(uploadfile);
-            return View("../Page/Pagination");
-        }
+        //[HttpPost]
+        //public IActionResult GetImagesByFile(IFormFile uploadfile)
+        //{
+        //    var images =_imageAnalysisService.FindSimilarImagesByImage(uploadfile);
+        //    return View("../Page/Pagination");
+        //}
         [HttpPost]
         public IActionResult ToggleImageLikeStatus(int id, bool isFavorited)
         {
+            // 從 Cookie 讀取用戶帳號，若帳號不存在則返回失敗
             String? userAccount = Request.Cookies["UserAccount"];
-
             if (string.IsNullOrEmpty(userAccount))
                 return Json(new { success = false });
 
+            // 根據 isFavorited 狀態執行相應的收藏操作
             if (isFavorited)
                 _myFavoritesService.RemoveFavorite(userAccount, id);
             else
                 _myFavoritesService.AddFavorite(userAccount, id);
 
-            return Json(new { success = true });
+            return Json(new { success = true });  // 返回操作結果
         }
     }
 }

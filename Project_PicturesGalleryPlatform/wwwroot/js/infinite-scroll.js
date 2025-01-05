@@ -14,9 +14,9 @@ $(document).ready(function () {
         var requestUrl = '';
 
         if (keyword) {
-            var requestUrl = `/api/Images/SearchImagesByKeyword?keyword=${keyword}`;  // 根據 tag 呼叫的控制器方法
+            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // 根據 tag 呼叫的控制器方法
         } else if (tag) {
-            var requestUrl = `/api/Images/GetImagesByTag?tag=${tag}`;  // 根據 keyword 呼叫的控制器方法
+            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // 根據 keyword 呼叫的控制器方法
         } else if (filepath) {
             var requestUrl = '@Url.Action("GetImagesByFilePath", "Home")';  // 根據 filepath 呼叫的控制器方法
         }

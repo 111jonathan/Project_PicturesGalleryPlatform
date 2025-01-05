@@ -13,11 +13,11 @@ namespace Project_PicturesGalleryPlatform.Services.ImageAnalysisService
             _imageService = imageService;
             _pythonImageAnalysisExecutor = pythonImageAnalysisExecutor;
         }
-        public List<ImageDetails> FindSimilarImagesByImage(IFormFile file)
-        {
-            var ids = _pythonImageAnalysisExecutor.FindSimilarImageIds(file);
-            return _imageService.GetImagesByIds(ids);
-        }
+        //public List<ImageDetails> FindSimilarImagesByImage(IFormFile file)
+        //{
+        //    var ids = _pythonImageAnalysisExecutor.FindSimilarImageIds(file);
+        //    return _imageService.GetImagesByIds(ids);
+        //}
         //public List<ImageDetails> SearchImagesByText()
         //{
         //    throw new NotImplementedException();

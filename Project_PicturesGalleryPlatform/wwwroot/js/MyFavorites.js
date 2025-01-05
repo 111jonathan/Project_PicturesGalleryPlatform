@@ -11,7 +11,7 @@
         var userAccount = urlParams.get(userAccount);
         
         $.ajax({
-            url: `/api/Images/GetImagesByUserAccount?userAccount=${userAccount}`,
+            url: `/api/Images/"Favorites"?userAccount=${userAccount}`,
             data: { page: page, pageSize: pageSize },
             type: 'GET',
             success: function (data) {
