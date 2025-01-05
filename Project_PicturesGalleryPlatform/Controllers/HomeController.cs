@@ -34,37 +34,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
             return View();
         }
-
-        [HttpPost]
-        public IActionResult SearchImages(string keyword)
-        {
-            if (string.IsNullOrWhiteSpace(keyword))
-            {
-                ViewData["ErrorMessage"] = "叫块Τ闽龄";
-                return View("Index", _imageService.GetRandomImages());
-            }
-
-            ViewData["keyword"] = keyword;
-            var images = _imageService.SearchImagesByKeyword(keyword);
-            return View("../Page/Result");
-            
-
-        }
-
-
-
-        public JsonResult GetImagesByPageNumber(int page, int pageSize)
-        {
-            if (page < 0 || pageSize <= 0)
-            {
-                return Json(new { error = "礚┪–把计" });
-            }
-
-            var images = _imageService.GetImagesByPageNumber(page, pageSize);
-            return Json(images);
-        }
-
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -76,7 +45,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
             {
                 Response.Cookies.Delete("UserAccount"); // 刪除 UserAccount 的 Cookie
             }
-            return RedirectToAction("Index", "Home"); // 登出後導向首頁
+            return RedirectToAction("Index", "Home"); // 登出後導向首?
         }
 
     }

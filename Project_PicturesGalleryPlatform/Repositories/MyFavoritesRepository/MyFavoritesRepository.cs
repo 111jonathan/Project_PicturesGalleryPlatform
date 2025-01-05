@@ -5,7 +5,8 @@ namespace Project_PicturesGalleryPlatform.Repositories.MyFavoritesRepository
 {
     public class MyFavoritesRepository : IMyFavoritesRepository
     {
-        private readonly string ConnectionString = "Server=tcp:test241214.database.windows.net,1433;Initial Catalog=Test;Persist Security Info=False;User ID=test;Password=Abcd1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        //private readonly string ConnectionString = "Server=tcp:test241214.database.windows.net,1433;Initial Catalog=Test;Persist Security Info=False;User ID=test;Password=Abcd1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private readonly string ConnectionString = "Server=tcp:group1project.database.windows.net,1433;Initial Catalog=PicturesGallery;Persist Security Info=False;User ID=manager;Password=Abcd1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         private void ExecuteNonQuery(string sqlQuery, object parameters = null)
         {
             using (var connection = new SqlConnection(ConnectionString))
@@ -26,16 +27,15 @@ namespace Project_PicturesGalleryPlatform.Repositories.MyFavoritesRepository
             ExecuteNonQuery(sqlQuery, new { UserAccount = userAccount, PictureId = pictureId });
         }
 
-        public int IsPictureInFavorites(string userAccount, int pictureId)
+        public bool IsPictureInFavorites(string userAccount, int pictureId)
         {
             var sqlQuery = "SELECT CASE WHEN EXISTS (SELECT 1 FROM favorite WHERE userAccount = @UserAccount AND pictureId = @PictureId) THEN 1 ELSE 0 END";
             using (var connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
-                return connection.ExecuteScalar<int>(sqlQuery, new { UserAccount = userAccount, PictureId = pictureId });
+                return connection.ExecuteScalar<int>(sqlQuery, new { UserAccount = userAccount, PictureId = pictureId }) == 1;
             }
         }
-
         public List<int> GetUserFavoritePictureIds(string userAccount)
         {
             var sqlQuery = "SELECT pictureId FROM favorite WHERE userAccount = @UserAccount";

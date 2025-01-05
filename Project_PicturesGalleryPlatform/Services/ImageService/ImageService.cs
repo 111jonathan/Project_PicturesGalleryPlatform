@@ -1,5 +1,6 @@
 ﻿using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
+using System.Drawing.Printing;
 
 
 namespace Project_PicturesGalleryPlatform.Services.ImageService
@@ -7,7 +8,6 @@ namespace Project_PicturesGalleryPlatform.Services.ImageService
     public class ImageService : IImageService
     {
         private readonly IImageRepository _imageRepository;
-        private static List<ImageDetails> _currentImageResults;
 
         public ImageService(IImageRepository imageRepository)
         {
@@ -15,35 +15,28 @@ namespace Project_PicturesGalleryPlatform.Services.ImageService
         }
         public List<ImageDetails> GetRandomImages()
         {
-            _currentImageResults = _imageRepository.GetRandomImages();
-            return _currentImageResults;
+            var images = _imageRepository.GetRandomImages();
+            return images;
         }
-        public List<ImageDetails> SearchImagesByKeyword(string keyword)
+        public List<ImageDetails> SearchImagesByKeyword(string keyword, int page, int pageSize)
         {
-            _currentImageResults = _imageRepository.SearchImagesByKeyword(keyword);
-            return _currentImageResults;
+            var images = _imageRepository.SearchImagesByKeyword(keyword);
+            return images?.Skip(page * pageSize).Take(pageSize).ToList() ?? new List<ImageDetails>();
         }
-
-        public List<ImageDetails> GetImagesByPageNumber(int page, int pageSize)
-        {
-            return _currentImageResults?.Skip(page * pageSize).Take(pageSize).ToList() ?? new List<ImageDetails>();
-        }
-
         public List<ImageDetails> GetImagesByAccountId(int id)
         {
-            _currentImageResults = _imageRepository.GetImagesByAccountId(id);
-            return _currentImageResults;
+            var images = _imageRepository.GetImagesByAccountId(id);
+            return images;
         }
         public List<ImageDetails> GetImagesByIds(List<int> ids)
         {
-            _currentImageResults = _imageRepository.GetImagesByIds(ids);
-            return _currentImageResults;
+            var images = _imageRepository.GetImagesByIds(ids);
+            return images;
         }
-
-        public List<ImageDetails> GetAccountsByTag(string tag)
+        public List<ImageDetails> GetImagesByTag(string tag, int page, int pageSize)
         {
-            _currentImageResults = _imageRepository.GetImagesByTag(tag);
-            return _currentImageResults;
+            var images = _imageRepository.GetImagesByTag(tag);
+            return images?.Skip(page * pageSize).Take(pageSize).ToList() ?? new List<ImageDetails>();
         }
     }
 }
