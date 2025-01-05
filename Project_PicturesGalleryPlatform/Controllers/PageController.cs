@@ -29,11 +29,10 @@ namespace Project_PicturesGalleryPlatform.Controllers
         {
             return View();
         }
-
         //點擊單照片
         public IActionResult PictureInfo(int id)
         {
-            var pictures = _imageService.GetImagesByAccountId(id);
+            var pictures = _imageService.GetImagesById(id);
             ViewData["picture"] = pictures;
             return View();
         }

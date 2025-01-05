@@ -3,6 +3,7 @@ using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
 using Project_PicturesGalleryPlatform.Repositories.MyFavoritesRepository;
 using Project_PicturesGalleryPlatform.Services.ImageService;
+using System.Drawing.Printing;
 
 namespace Project_PicturesGalleryPlatform.Services.MyFavoritesService
 {
@@ -30,10 +31,10 @@ namespace Project_PicturesGalleryPlatform.Services.MyFavoritesService
                 image.isFavorited = _myFavoritesRepository.IsPictureInFavorites(userAccount, image.id);
             return images;
         }
-        public List<ImageDetails> GetImagesByUserAccount(string userAccount, int page, int pagesize)
+        public List<ImageDetails> GetImagesByUserAccount(string userAccount, int page, int pageSize)
         {
             var ids = _myFavoritesRepository.GetUserFavoritePictureIds(userAccount);
-            return _imageService.GetImagesByIds(ids);
+            return _imageService.GetImagesByIds(ids).Skip(page * pageSize).Take(pageSize).ToList() ?? new List<ImageDetails>();
         }
     }
 }

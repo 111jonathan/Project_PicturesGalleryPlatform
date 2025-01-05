@@ -23,9 +23,9 @@ namespace Project_PicturesGalleryPlatform.Services.ImageService
             var images = _imageRepository.SearchImagesByKeyword(keyword);
             return images?.Skip(page * pageSize).Take(pageSize).ToList() ?? new List<ImageDetails>();
         }
-        public List<ImageDetails> GetImagesByAccountId(int id)
+        public List<ImageDetails> GetImagesById(int id)
         {
-            var images = _imageRepository.GetImagesByAccountId(id);
+            var images = _imageRepository.GetImagesById(id);
             return images;
         }
         public List<ImageDetails> GetImagesByIds(List<int> ids)

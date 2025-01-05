@@ -46,7 +46,7 @@ namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
             return ExecuteQuery(sqlQuery, new { Tag = tag });
         }
 
-        public List<ImageDetails> GetImagesByAccountId(int id)
+        public List<ImageDetails> GetImagesById(int id)
         {
             var sqlQuery = "SELECT * FROM Pictures WHERE id = @id";
             return ExecuteQuery(sqlQuery, new { id });

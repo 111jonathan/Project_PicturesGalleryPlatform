@@ -9,6 +9,6 @@ namespace Project_PicturesGalleryPlatform.Repositories.ImageRepository
         List<ImageDetails> GetRelatedImagesById(int id);
         List<ImageDetails> GetImagesByIds(List<int> ids);
         List<ImageDetails> GetImagesByTag(string tag);
-        List<ImageDetails> GetImagesByAccountId(int id);
+        List<ImageDetails> GetImagesById(int id);
     }
 }
