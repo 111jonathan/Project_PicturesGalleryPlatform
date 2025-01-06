@@ -44,7 +44,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         //    return View("../Page/Pagination");
         //}
         [HttpPost]
-        public IActionResult ToggleImageLikeStatus(int id, bool isFavorited)
+        public IActionResult ToggleImageLikeStatus(int id, String isFavorited)
         {
             // 從 Cookie 讀取用戶帳號，若帳號不存在則返回失敗
             String? userAccount = Request.Cookies["UserAccount"];
@@ -52,7 +52,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 return Json(new { success = false });
 
             // 根據 isFavorited 狀態執行相應的收藏操作
-            if (isFavorited)
+            if (isFavorited.Equals("fas"))
                 _myFavoritesService.RemoveFavorite(userAccount, id);
             else
                 _myFavoritesService.AddFavorite(userAccount, id);

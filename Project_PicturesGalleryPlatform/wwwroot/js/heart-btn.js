@@ -8,16 +8,16 @@
         type: 'POST',
         data: {
             id: imageId,
-            isFavorited: isFavorited ? true : false
+            isFavorited: isFavorited ? 'fas' : 'far'
         },
         success: function (response) {
             if (response.success) {
                 if (isFavorited) {
                     heartBtn.find(".heart").removeClass('fas fa-heart').addClass('far fa-heart');
-                    heartBtn.find("span").text("\u00A0加入我的最愛");
+
                 } else {
                     heartBtn.find(".heart").removeClass('far fa-heart').addClass('fas fa-heart');
-                    heartBtn.find("span").text("\u00A0從我的最愛移除");
+
                 }
             } else {
                 window.location.href = '/Login/Login'; // 未登入的處理
