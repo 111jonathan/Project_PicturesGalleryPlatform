@@ -115,7 +115,11 @@ namespace Project_PicturesGalleryPlatform.Controllers
         }
         public IActionResult MyFavorites()
         {
-            return View();
+            String? userAccount = Request.Cookies["UserAccount"];
+
+            if (string.IsNullOrEmpty(userAccount))
+                return View("../Login/Login");
+            return View(userAccount);
         }
 
 
