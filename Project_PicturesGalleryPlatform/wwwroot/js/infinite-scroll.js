@@ -3,12 +3,39 @@ $(document).ready(function () {
     var pageSize = 40;
     var isLoading = false;
 
+    var urlParams = new URLSearchParams(window.location.search);
+    var tag = urlParams.get('tag');
+    var keyword = urlParams.get('keyword');
+    var filepath = urlParams.get('filePath');
+
+    if (keyword) {
+        $("h2.u-align-center").text(keyword + '\u5716\u7247');
+    } else if (tag) {
+        $("h2.u-align-center").text(tag + '\u5716\u7247');
+    }
+
     function loadItems() {
         if (isLoading) return;
         isLoading = true;
 
+        var requestUrl = '';
+
+        if (keyword) {
+            var requestUrl = `/api/Images/Search?keyword=${encodeURIComponent(keyword)}`;  // 根據 tag 呼叫的控制器方法
+        } else if (tag) {
+            var requestUrl = `/api/Images/SearchByTag?tag=${encodeURIComponent(tag)}`;  // 根據 keyword 呼叫的控制器方法
+        } else if (filepath) {
+            var requestUrl = '@Url.Action("GetImagesByFilePath", "Home")';  // 根據 filepath 呼叫的控制器方法
+        }
+
+        if (!requestUrl) {
+            console.error("No valid parameters to generate request URL.");
+            isLoading = false;
+            return;
+        }
+
         $.ajax({
-            url: $('#imageResultsContainer').data('url'),
+            url: requestUrl,
             data: { page: page, pageSize: pageSize },
             type: 'GET',
             success: function (data) {
@@ -19,18 +46,12 @@ $(document).ready(function () {
                                  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="X"
                                  data-animation-delay="750">
                                 <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                                    <form action="@Url.Action('ToggleImageLikeStatus', 'Home')" method="post" id="likeForm-${item.id}">
-                                         <input type="hidden" name="id" value="${item.id}" />
-                                         <input type="hidden" name="category" value="${item.category}" />
-                                         <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer;">
-                                                <i class="heart ${item.isLiked ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
-                                         </button>
-                                    </form>
+                                    <i class="heart-btn heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
                                     <h4 class="u-align-center u-text u-text-2">
                                         ${item.tag}<br>
                                     </h4>
                                     <img class="u-expanded-width u-image u-image-default u-image-1" alt="${item.tag}" data-image-width="363"
-                                         data-image-height="363" src="${item.url}">
+                                         data-image-height="363" src="/images2/${item.id}.webp">
                                     <p class="u-align-center u-text u-text-3">${item.title}</p>
                                     <a href="../SinglePic/SinglePic?id=${item.id}"
                                        class="u-border-1 u-border-active-palette-3-base u-border-black u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-hover-feature u-none u-text-active-black u-text-body-color u-text-hover-black u-btn-1"
@@ -58,36 +79,5 @@ $(document).ready(function () {
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
             loadItems();
         }
-    });
-
-    $(document).on('click', '.heart', function (e) {
-        e.preventDefault();
-
-        var heart = $(this);
-        var imageId = heart.data('id');
-        var isLiked = heart.hasClass('fas');
-
-        $.ajax({
-            url: '/Page/ToggleImageLikeStatus',
-            type: 'POST',
-            data: {
-                id: imageId,
-                category: isLiked ? 'fas' : 'far'
-            },
-            success: function (response) {
-                if (response.success) {
-                    if (isLiked) {
-                        heart.removeClass('fas fa-heart').addClass('far fa-heart');
-                    } else {
-                        heart.removeClass('far fa-heart').addClass('fas fa-heart');
-                    }
-                } else {
-                    window.location.href = '/Login/Login';
-                }
-            },
-            error: function () {
-                alert('An error occurred, please try again.');
-            }
-        });
     });
 });

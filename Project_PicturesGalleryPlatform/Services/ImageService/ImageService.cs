@@ -1,49 +1,33 @@
-﻿using Project_PicturesGalleryPlatform.Models;
+﻿using Azure.Core;
+using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
-
 
 namespace Project_PicturesGalleryPlatform.Services.ImageService
 {
+    // 處理圖片相關的業務邏輯
     public class ImageService : IImageService
     {
         private readonly IImageRepository _imageRepository;
-        private static List<ImageDetails> _currentImageResults;
 
-        public ImageService(IImageRepository imageRepository)
-        {
-            _imageRepository = imageRepository;
-        }
-        public List<ImageDetails> GetRandomImages()
-        {
-            _currentImageResults = _imageRepository.GetRandomImages();
-            return _currentImageResults;
-        }
-        public List<ImageDetails> SearchImagesByKeyword(string keyword)
-        {
-            _currentImageResults = _imageRepository.SearchImagesByKeyword(keyword);
-            return _currentImageResults;
-        }
+        // 初始化 repository
+        public ImageService(IImageRepository imageRepository) => _imageRepository = imageRepository;
 
-        public List<ImageDetails> GetImagesByPageNumber(int page, int pageSize)
-        {
-            return _currentImageResults?.Skip(page * pageSize).Take(pageSize).ToList() ?? new List<ImageDetails>();
-        }
+        // 取得隨機圖片
+        public List<ImageDetails> GetRandomImages() => _imageRepository.GetRandomImages();
 
-        public List<ImageDetails> GetImagesByAccountId(int id)
-        {
-            _currentImageResults = _imageRepository.GetImagesByAccountId(id);
-            return _currentImageResults;
-        }
-        public List<ImageDetails> GetImagesByIds(List<int> ids)
-        {
-            _currentImageResults = _imageRepository.GetImagesByIds(ids);
-            return _currentImageResults;
-        }
+        // 根據關鍵字搜尋圖片
+        public List<ImageDetails> SearchImagesByKeyword(string keyword, int page, int pageSize) =>
+            _imageRepository.SearchImagesByKeyword(keyword, page, pageSize);
 
-        public List<ImageDetails> GetAccountsByTag(string tag)
-        {
-            _currentImageResults = _imageRepository.GetImagesByTag(tag);
-            return _currentImageResults;
-        }
+        // 依 ID 取得圖片
+        public List<ImageDetails> GetImagesById(int id) => _imageRepository.GetImagesById(id);
+
+        // 依多個 ID 取得圖片
+        public List<ImageDetails> GetImagesByIds(List<int> ids, int page, int pageSize) =>
+            _imageRepository.GetImagesByIds(ids, page, pageSize);
+
+        // 根據標籤取得圖片
+        public List<ImageDetails> GetImagesByTag(string tag, int page, int pageSize) =>
+            _imageRepository.GetImagesByTag(tag, page, pageSize);
     }
 }

@@ -1,23 +1,26 @@
-using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
+﻿using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
 using Project_PicturesGalleryPlatform.Repositories.MyFavoritesRepository;
 using Project_PicturesGalleryPlatform.Services.ImageAnalysisService.PythonImageAnalysisExecutor;
 using Project_PicturesGalleryPlatform.Services.ImageAnalysisService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
+using Microsoft.EntityFrameworkCore;
+using Project_PicturesGalleryPlatform.Models;
+using Project_PicturesGalleryPlatform.Repositories;
+using Project_PicturesGalleryPlatform.Services;
 using Project_PicturesGalleryPlatform.Repositories.IRatingService;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddDataAnnotationsLocalization();
 
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options =>
-{
-    options.Cookie.Name = ".MyApp.Session";
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-    options.Cookie.IsEssential = true;
-});
+// �����Y�ώ����   David add the following 2 lines
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 builder.Services.AddScoped<IRatingService, RatingService>();
 builder.Services.AddScoped<IMyFavoritesRepository, MyFavoritesRepository>();
@@ -43,7 +46,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseSession();
 
 app.UseAuthorization();
 

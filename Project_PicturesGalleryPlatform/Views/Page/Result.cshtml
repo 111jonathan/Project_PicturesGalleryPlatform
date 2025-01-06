@@ -1,11 +1,9 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
 
 }
 <head>
     <link rel="stylesheet" href="~/css/food.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <section class="u-align-center u-clearfix u-container-align-center u-image u-shading u-section-1" id="sec-c540"
          data-image-width="1980" data-image-height="1600">
@@ -15,7 +13,7 @@
             @ViewData["keyword"]圖片
         </h2>
         <div class="u-expanded-width u-list u-list-1">
-            <div class="u-repeater u-repeater-1" id="imageResultsContainer" data-url="@Url.Action("GetImagesByPageNumber", "Home")" >
+            <div class="u-repeater u-repeater-1" id="imageResultsContainer" data-url="@Url.Action("GetImagesByPageNumber", "Home")">
             </div>
         </div>
         <p class="u-align-center u-text u-text-26" data-animation-name="customAnimationIn" data-animation-duration="1500"
@@ -29,14 +27,15 @@
 </section>
 <style>
     .heart {
-            font-size: 20px; /* 減小愛心圖標大小 */
-            cursor: pointer;
-            color: red;
-            position: absolute;
-            top: 20px; /* 距離頁面頂部10px */
-            right: 20px; /* 距離頁面右邊10px */
-            z-index: 1000; /* 保證愛心圖示在其他元素上層 */
-        }
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: red;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
     .u-dialog-section-9 .u-dialog-1 {
         width: 570px;
         min-height: 578px;

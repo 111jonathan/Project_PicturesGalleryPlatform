@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
@@ -13,13 +14,15 @@ namespace Project_PicturesGalleryPlatform.Controllers
         private readonly IImageService _imageService;
         private readonly IMyFavoritesService _myFavoritesService;
         protected readonly IRatingService _ratingService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public SinglePicController(ILogger<HomeController> logger, IImageService imageService, IMyFavoritesService myFavoritesService, IRatingService ratingService)
+        public SinglePicController(ILogger<HomeController> logger, IImageService imageService, IMyFavoritesService myFavoritesService, IRatingService ratingService, IWebHostEnvironment webHostEnvironment)
         {
             _logger = logger;
             _imageService = imageService;
             _myFavoritesService = myFavoritesService;
             _ratingService = ratingService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult SinglePic(int id)
@@ -27,7 +30,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
             ViewData["user"] = HttpContext.Session.GetString("UserId") != null;
 
-            var pictures = _imageService.GetImagesByAccountId(id);
+            var pictures = _imageService.GetImagesById(id);
             if (pictures == null)
             {
                 return NotFound();
@@ -116,19 +119,17 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
         }
 
-        // 檢查圖片是否已經被用戶喜愛
-        public bool IsImageLiked(int id)
+        public ActionResult DownloadFile(string picId)
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value; // 用戶ID
+            string webRootPath = _webHostEnvironment.WebRootPath;
 
-            if (string.IsNullOrEmpty(userId))
-            {
-                return false; // 如果用戶尚未登入，返回 false
-            }
+            // 拼接出檔案的物理路徑
+            string filePath = Path.Combine(webRootPath, "images2", picId + ".webp");
+            string fileName = picId + ".jpg";
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
 
-            return _myFavoritesService.IsPictureInFavorites(userId, id); // 檢查用戶是否將圖片添加到收藏
+            return File(fileBytes, "application/octet-stream", fileName);
         }
-
 
     }
 }

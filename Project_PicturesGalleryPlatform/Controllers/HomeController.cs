@@ -22,43 +22,27 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
         public IActionResult Index()
         {
-            var user = HttpContext.Request.Query["user"].ToString();
-            if (!string.IsNullOrEmpty(user))
+            if (Request.Cookies.ContainsKey("UserAccount"))
             {
-                HttpContext.Session.SetString("UserId", user);
+                ViewBag.User = Request.Cookies["UserAccount"]; // î Cookies ïŸ«è…•å¦èššæ°ªé¡æƒ³
             }
+            else
+            {
+                ViewBag.User = null; // å¸¤è…ï µîã„›åç¦»îµ¨ null
+            }
+            // è¼‰å…¥è³‡æ–™åº«è©•åˆ†è¡¨å–®
             var totalScores = _ratingService.GetUserTotalScore();
             ViewData["TotalScores"] = totalScores;
             return View();
         }
 
-        [HttpPost]
-        public IActionResult SearchImages(string keyword)
+        public IActionResult Logout()
         {
-            if (string.IsNullOrWhiteSpace(keyword))
+            if (Request.Cookies.ContainsKey("UserAccount"))
             {
-                ViewData["ErrorMessage"] = "½Ğ¿é¤J¦³®ÄªºÃöÁä¦r¡C";
-                return View("Index", _imageService.GetRandomImages());
+                Response.Cookies.Delete("UserAccount"); // ï‚·å£º UserAccount è…” Cookie
             }
-
-            ViewData["keyword"] = keyword;
-            var images = _imageService.SearchImagesByKeyword(keyword);
-            return View("../Page/Result");
-            
-
-        }
-
-
-
-        public JsonResult GetImagesByPageNumber(int page, int pageSize)
-        {
-            if (page < 0 || pageSize <= 0)
-            {
-                return Json(new { error = "µL®Äªº­¶­±©Î¨C­¶¤j¤p°Ñ¼Æ¡C" });
-            }
-
-            var images = _imageService.GetImagesByPageNumber(page, pageSize);
-            return Json(images);
+            return RedirectToAction("Index", "Home"); // è…å ¤æ‘½ï–¼ç ƒå¿‘?
         }
 
 
