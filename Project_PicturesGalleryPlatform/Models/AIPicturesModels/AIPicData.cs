@@ -2,6 +2,7 @@
 {
     public class AIPicData
     {
+        //public string keyword { get; set; }
         public string id { get; set; }
         public string output_url { get; set; }
         public string share_url { get; set; }

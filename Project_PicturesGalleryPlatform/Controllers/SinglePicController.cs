@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Project_PicturesGalleryPlatform.Models.AIPicturesModels;
 using Project_PicturesGalleryPlatform.Services.ImageService;
+using Project_PicturesGalleryPlatform.Models;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {
@@ -26,6 +28,16 @@ namespace Project_PicturesGalleryPlatform.Controllers
         //    ViewData["picture"] = pictures;
         //    return View();
         //}
+
+        public IActionResult SinglePic_AI(AIPicData aiPicData, string keyword)
+        {
+            Console.WriteLine("Single//Single_AI 接收參數: {0}&{1}", aiPicData, keyword);
+            // 處理數據
+            DataTransformer dataTransformer = new DataTransformer(aiPicData);
+            ImageDetails imageDetail = dataTransformer.Transform(keyword);
+            //ViewData["imageDetail"] = imageDetail;
+            return View(imageDetail);
+        }
     }
 }
 

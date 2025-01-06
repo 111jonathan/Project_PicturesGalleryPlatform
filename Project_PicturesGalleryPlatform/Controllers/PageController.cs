@@ -47,25 +47,26 @@ namespace Project_PicturesGalleryPlatform.Controllers
             return View("../Page/Pagination");
         }
 
-        public JsonResult GenPic()
+        /// <summary>
+        /// 生成AI圖片，用於ajax請求
+        /// </summary>
+        /// <returns>生成的圖片資訊</returns>
+        public JsonResult GenPic(string keyword)
         {
-            Console.WriteLine("進入GenPic");
-            string keyword = TempData["keyword"]+"";
-            Console.WriteLine("keyword: " + keyword);
-            TempData["keyword"] = keyword;// 刷新TempData存活時間?
-            // test
-            string currentDirectory = Directory.GetCurrentDirectory();
-            Console.WriteLine("當前GenPic()工作目錄: " + currentDirectory);
+            // test當前工作目錄
+            Console.WriteLine("Page//GenPic keyword: " + keyword);
             PYProcess_AI genPic = new PYProcess_AI(keyword, 1);// *測試 僅生成一張圖
             var picturesData = genPic.Generate();
             // 判斷是否成功生成圖片
             if (picturesData == null)
             {
+                Console.WriteLine("生成圖片失敗");
                 return Json(new { status = "fail", message = "生成圖片失敗" });
             }
             else
             {
-                return Json(new { status = "success", message = "生成圖片成功", data = picturesData });
+                Console.WriteLine("生成圖片成功");
+                return Json(new { status = "success", message = "生成圖片成功", keyword_AI = keyword, pictures = picturesData });
             }
         }
     }
