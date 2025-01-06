@@ -27,6 +27,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
             {
                 HttpContext.Session.SetString("UserId", user);
             }
+            // è¼‰å…¥è³‡æ–™åº«è©•åˆ†è¡¨å–®
             var totalScores = _ratingService.GetUserTotalScore();
             ViewData["TotalScores"] = totalScores;
             return View();
@@ -37,14 +38,14 @@ namespace Project_PicturesGalleryPlatform.Controllers
         {
             if (string.IsNullOrWhiteSpace(keyword))
             {
-                ViewData["ErrorMessage"] = "½Ð¿é¤J¦³®ÄªºÃöÁä¦r¡C";
+                ViewData["ErrorMessage"] = "ï¿½Ð¿ï¿½Jï¿½ï¿½ï¿½Äªï¿½ï¿½ï¿½ï¿½ï¿½rï¿½C";
                 return View("Index", _imageService.GetRandomImages());
             }
 
             ViewData["keyword"] = keyword;
             var images = _imageService.SearchImagesByKeyword(keyword);
             return View("../Page/Result");
-            
+
 
         }
 
@@ -54,7 +55,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         {
             if (page < 0 || pageSize <= 0)
             {
-                return Json(new { error = "µL®Äªº­¶­±©Î¨C­¶¤j¤p°Ñ¼Æ¡C" });
+                return Json(new { error = "ï¿½Lï¿½Äªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¨Cï¿½ï¿½ï¿½jï¿½pï¿½Ñ¼Æ¡C" });
             }
 
             var images = _imageService.GetImagesByPageNumber(page, pageSize);

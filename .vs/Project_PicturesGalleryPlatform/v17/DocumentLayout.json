@@ -1,34 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\\u7DF4\u7FD2\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4\\project_picturesgalleryplatform\\wwwroot\\css\\ranking.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\css\\ranking.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4.1\\project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\\u7DF4\u7FD2\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4\\project_picturesgalleryplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4.1\\project_picturesgalleryplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\\u7DF4\u7FD2\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4\\project_picturesgalleryplatform\\repositories\\iratingservice\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\repositories\\iratingservice\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4.1\\project_picturesgalleryplatform\\repositories\\imagerepository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\repositories\\imagerepository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\\u7DF4\u7FD2\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4\\project_picturesgalleryplatform\\repositories\\iratingservice\\iratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\repositories\\iratingservice\\iratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\\u7DF4\u7FD2\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4\\project_picturesgalleryplatform\\models\\picturescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\models\\picturescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\\u7DF4\u7FD2\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4\\project_picturesgalleryplatform\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\\u7DF4\u7FD2\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4\\project_picturesgalleryplatform\\repositories\\imagerepository\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\repositories\\imagerepository\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\lccent_project\\project_picturesgalleryplatform\\project_picturesgalleryplatform-ver4.1\\project_picturesgalleryplatform\\services\\imageanalysisservice\\imageanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\services\\imageanalysisservice\\imageanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,93 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ranking.css",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\wwwroot\\css\\ranking.css",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\css\\ranking.css",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\wwwroot\\css\\ranking.css",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\css\\ranking.css",
-              "ViewState": "AgIAADcAAAAAAAAAAAAowE4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-03T14:54:19.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RatingService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\RatingService.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAowGYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T13:05:10.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:21:05.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PictureScore.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Models\\PictureScore.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Models\\PictureScore.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Models\\PictureScore.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Models\\PictureScore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T13:59:10.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRatingService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Repositories\\IRatingService\\IRatingService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:07:10.708Z",
+              "Title": "SinglePic.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T13:47:48.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAAAMsAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-03T13:06:43.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:40:53.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\IImageRepository.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\IImageRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\\u7DF4\u7FD2\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4\\Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\IImageRepository.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\IImageRepository.cs",
+              "DocumentIndex": 2,
+              "Title": "ImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\ImageRepository.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\ImageRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\ImageRepository.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Repositories\\ImageRepository\\ImageRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T13:25:02.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ImageAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\lccent_Project\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform-Ver4.1\\Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Services\\ImageAnalysisService\\ImageAnalysisService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T13:04:51.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:24:53.352Z"
             }
           ]
         }
