@@ -1,8 +1,10 @@
 ﻿@{
 
     ViewData["Title"] = "Home Page";
-    int n = 6;
+    var scores = ViewData["TotalScores"] as List<PictureScore>;
 }
+@model IEnumerable<PictureScore>
+
 <head>
     <link rel="stylesheet" href="~/css/index.css" media="screen">
     <link rel="stylesheet" href="~/css/upload.css" media="screen">
@@ -54,7 +56,7 @@
             <span id="file-name" style="display:none; color:#F2F2F2;">未選擇檔案</span>
             <input type="submit" id="submit-btn" hidden>
         </form>
-        
+
         <a href=""
            class="u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-5-dark-2 u-radius u-text-body-alt-color u-text-hover-white u-btn-3">
             上傳檔案
@@ -181,6 +183,9 @@
         </div>
     </div>
 </section>
+
+@if (scores != null && scores.Any())
+{
     <section class="u-clearfix u-container-align-center u-valign-middle u-section-2" id="carousel_6b13">
         <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn"
             data-animation-duration="1500" data-animation-delay="500">
@@ -190,46 +195,32 @@
             <div class="u-gallery-inner u-gallery-inner-1">
                 <!-- Group 1 -->
                 <div class="u-gallery-group" style="display: flex;">
-                    <div class="u-effect-hover-zoom u-gallery-item">
-                        <div class="u-back-slide">
-                            <img class="u-back-image" src="~/images/modern-styled-entryway_23-2150695943.jpeg" alt="Image 1">
-                            <span class="image-number"></span>
+                    <!--顯示前三個圖片 -->
+                    @foreach (var (score, index) in scores.Take(3).Select((value, i) => (value, i)))    
+                    {                        
+                        <div class="u-effect-hover-zoom u-gallery-item">
+                            <div class="u-back-slide">
+                                <img class="u-back-image" src="@Url.Content("~/testImages/" + score.PictureId + ".jpg")" alt="Image @score.PictureId">
+                                <span class="image-ranking">@score.Score</span>
+                                <span class="image-number">@index</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="u-effect-hover-zoom u-gallery-item">
-                        <div class="u-back-slide">
-                            <img class="u-back-image" src="~/images/mockup-frames-living-room-interior-with-chair-decorscandinavian-style.jpg" alt="Image 2">
-                            <span class="image-number"></span>
-                        </div>
-                    </div>
-                    <div class="u-effect-hover-zoom u-gallery-item">
-                        <div class="u-back-slide">
-                            <img class="u-back-image" src="~/images/interior-design-with-photoframes-couch.jpg" alt="Image 3">
-                            <span class="image-number"></span>
-                        </div>
-                    </div>
+                    }
                 </div>
 
                 <!-- Group 2 -->
                 <div class="u-gallery-group" style="display: none;">
-                    <div class="u-effect-hover-zoom u-gallery-item">
-                        <div class="u-back-slide">
-                            <img class="u-back-image" src="~/images/picture-frame-by-velvet-armchair.jpg" alt="Image 4">
-                            <span class="image-number"></span>
+                    <!--顯示後三個圖片-->
+                    @foreach (var (score, index) in scores.Skip(3).Take(3).Select((value, i) => (value, i))) 
+                    {
+                        <div class="u-effect-hover-zoom u-gallery-item">
+                            <div class="u-back-slide">
+                                <img class="u-back-image" src="@Url.Content("~/testImages/" + score.PictureId + ".jpg")" alt="Image @score.PictureId">
+                                <span class="image-ranking">@score.Score</span>
+                                <span class="image-number"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="u-effect-hover-zoom u-gallery-item">
-                        <div class="u-back-slide">
-                            <img class="u-back-image" src="~/images/new2.jpg" alt="Image 5">
-                        <span class="image-number"></span>
-                        </div>
-                    </div>
-                    <div class="u-effect-hover-zoom u-gallery-item">
-                        <div class="u-back-slide">
-                            <img class="u-back-image" src="~/images/multiethnic-designers-pose-against-window_273609-44877.jpg" alt="Image 6">
-                        <span class="image-number"></span>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
 
@@ -242,6 +233,7 @@
             </a>
         </div>
     </section>
+}
 
 
 <section class="u-align-center u-clearfix u-container-align-center u-section-4" id="carousel_2dab">
@@ -420,51 +412,56 @@
             }
         }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            // 抓取所有的圖片元素
-            const images = document.querySelectorAll(".u-gallery-item .u-back-image");
+document.addEventListener("DOMContentLoaded", function () {
+    // 抓取所有的圖片元素
+    const images = document.querySelectorAll(".u-gallery-item .u-back-image");
 
-            // 遍歷每個圖片，並將圖片數量設置到對應的 <span> 中
-            images.forEach((image, index) => {
-                const imageNumberSpan = image.closest('.u-gallery-item').querySelector('.image-number');
-                if (imageNumberSpan) {
-                    imageNumberSpan.textContent = index + 1;  // 圖片編號從1開始
-                }
-            });
+    // 遍歷每個圖片，並將圖片數量設置到對應的 <span> 中
+    images.forEach((image, index) => {
+        // 確保 span 有正確的位置
+        const imageNumberSpan = image.closest('.u-gallery-item').querySelector('.image-number');
+        if (imageNumberSpan) {
+            imageNumberSpan.textContent = index + 1;  // 圖片編號從1開始
+            console.log(`Image ${index + 1} number set.`);
+        } else {
+            console.log('No image number span found for this image');
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const galleryInner = document.querySelector(".u-gallery-inner-1");
+    const groups = galleryInner.querySelectorAll(".u-gallery-group");
+    let currentIndex = 0;
+
+    function showGroup(index) {
+        groups.forEach((group, i) => {
+            group.style.display = i === index ? "flex" : "none";
         });
+    }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const galleryInner = document.querySelector(".u-gallery-inner-1");
-            const groups = galleryInner.querySelectorAll(".u-gallery-group");
-            let currentIndex = 0;
-
-            function showGroup(index) {
-                groups.forEach((group, i) => {
-                    group.style.display = i === index ? "flex" : "none";
-                });
-            }
-
-            function autoRotate() {
-                setInterval(() => {
-                    currentIndex = (currentIndex + 1) % groups.length;
-                    showGroup(currentIndex);
-                }, 3000); // Rotate every 3 seconds
-            }
-
-            // Initialize gallery
+    function autoRotate() {
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % groups.length;
             showGroup(currentIndex);
-            autoRotate();
+        }, 3000); // Rotate every 3 seconds
+    }
 
-            // Navigation
-            document.querySelector(".u-gallery-nav-prev").addEventListener("click", function () {
-                currentIndex = (currentIndex - 1 + groups.length) % groups.length;
-                showGroup(currentIndex);
-            });
+    // Initialize gallery
+    showGroup(currentIndex);
+    autoRotate();
 
-            document.querySelector(".u-gallery-nav-next").addEventListener("click", function () {
-                currentIndex = (currentIndex + 1) % groups.length;
-                showGroup(currentIndex);
-            });
-        });
+    // Navigation
+    document.querySelector(".u-gallery-nav-prev").addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + groups.length) % groups.length;
+        showGroup(currentIndex);
+    });
+
+    document.querySelector(".u-gallery-nav-next").addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % groups.length;
+        showGroup(currentIndex);
+    });
+});
+
     </script>
 }

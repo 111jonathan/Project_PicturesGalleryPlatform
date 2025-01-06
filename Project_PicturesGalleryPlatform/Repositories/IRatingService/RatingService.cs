@@ -1,6 +1,7 @@
 ﻿
 using Dapper;
 using Microsoft.Data.SqlClient;
+using Project_PicturesGalleryPlatform.Models;
 using static System.Formats.Asn1.AsnWriter;
 
 namespace Project_PicturesGalleryPlatform.Repositories.IRatingService
@@ -9,8 +10,8 @@ namespace Project_PicturesGalleryPlatform.Repositories.IRatingService
     public class RatingService : IRatingService
     {
         private readonly ILogger<RatingService> _logger;
-        private readonly string ConnectionString = "Server=tcp:test241214.database.windows.net,1433;Initial Catalog=Test;Persist Security Info=False;User ID=test;Password=Abcd1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-
+        private readonly string ConnectionString = "Server=tcp:group1project.database.windows.net,1433;Initial Catalog=PicturesGallery;Persist Security Info=False;User ID=manager;Password=Abcd1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        //private readonly string ConnectionString = "Server=tcp:test241214.database.windows.net,1433;Initial Catalog=Test;Persist Security Info=False;User ID=test;Password=Abcd1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public RatingService(ILogger<RatingService> logger)
         {
             _logger = logger;
@@ -82,6 +83,26 @@ namespace Project_PicturesGalleryPlatform.Repositories.IRatingService
             {
                 connection.Open();
                 return connection.Query<int>(sqlQuery, new { UserAccount = userAccount }).ToList();
+            }
+        }
+
+        public List<PictureScore> GetUserTotalScore()
+        {
+            //var sqlQuery = "SELECT pictureId, score FROM picturescore WHERE score IS NOT NULL ORDER BY pictureId";
+            var sqlQuery = "SELECT pictureId, SUM(CAST(score AS TINYINT)) AS Score FROM picturescore GROUP BY pictureId ORDER BY Score DESC";
+
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                var result = connection.Query<PictureScore>(sqlQuery).ToList();
+
+                // 確認結果
+                //foreach (var score in result)
+                //{
+                //    Console.WriteLine($"PictureId: {score.PictureId}, TotalScore: {score.Score}");
+                //}
+
+                return result;
             }
         }
     }
