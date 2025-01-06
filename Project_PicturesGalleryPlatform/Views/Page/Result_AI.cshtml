@@ -1,7 +1,8 @@
 ﻿
 @{
     ViewData["Title"] = "Home Page";
-    
+    int test = 123;
+    string keyword = TempData["keyword_AI"] + "";
 }
 <head>
     <link rel="stylesheet" href="~/css/food.css" media="screen">
@@ -11,12 +12,22 @@
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn"
             data-animation-duration="1500">
-            @TempData["keyword"]圖片
+            @keyword AI生成圖片
         </h2>
+        <!-- 使用隐藏字段保存 TempData 值 -->
+        <input type="hidden" id="keepKeyword" value="@TempData["keyword_AI"]">
         <div class="u-expanded-width u-list u-list-1">
-            <div class="u-repeater u-repeater-1" id="imageResultsContainer" data-url="@Url.Action("GenPic", "Page")" >
+            <div class="u-repeater u-repeater-1" id="imageResultsContainer" data-url="@Url.Action("GenPic", "Page", new{keyword = keyword})" >
+                <!-- 提示: 處理中 -->
+                <div id="loadingOverlay" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p>Loading...</p>
+                </div>
+
             </div>
+            <button id="GenerateMoreButton" class="generate-button">繼續生成AI圖片</button>
         </div>
+
         <p class="u-align-center u-text u-text-26" data-animation-name="customAnimationIn" data-animation-duration="1500"
            data-animation-delay="750">
             Images from <a href="https://www.freepik.com/"
@@ -27,6 +38,18 @@
     </div>
 </section>
 <style>
+    .generate-button {
+        background-color: #f1c40f; /* 按钮背景色 (黄色) */
+        color: #ffffff; /* 按钮文字颜色 (白色) */
+        border: none; /* 无边框 */
+        padding: 10px 20px; /* 内边距 */
+        font-size: 16px; /* 字体大小 */
+        border-radius: 5px; /* 圆角 */
+        cursor: pointer; /* 鼠标指针样式 */
+        transition: all 0.3s ease; /* 添加过渡效果 */
+    }
+
+
     .u-dialog-section-9 .u-dialog-1 {
         width: 570px;
         min-height: 578px;
@@ -167,5 +190,5 @@
     }
 </style>
 @section Scripts {
-    <script src="~/js/infinite-scroll.js"></script>
+    <script src="~/js/infinite-scroll-AI.js"></script>
 }

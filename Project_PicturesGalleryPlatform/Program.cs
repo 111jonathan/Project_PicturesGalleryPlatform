@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories;
 using Project_PicturesGalleryPlatform.Services;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +31,10 @@ builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<IImageAnalysisService, ImageAnalysisService>();
 builder.Services.AddScoped<IPythonImageAnalysisExecutor, PythonImageAnalysisExecutor>();
 
+builder.Services.AddControllersWithViews();
+builder.Services.AddSession();// for session
+builder.Services.AddSingleton<ITempDataProvider, SessionStateTempDataProvider>();// 使用session存取TempData
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,6 +45,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();// for session
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

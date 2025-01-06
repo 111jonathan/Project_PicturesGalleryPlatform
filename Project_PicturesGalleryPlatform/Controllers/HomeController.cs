@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
 using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Services.ImageService;
@@ -61,9 +62,10 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 TempData["controller"] = "Home";
                 return RedirectToAction("TransitionPage", "Universal");
             }
-            Console.WriteLine("接收到keyword: {0}", keyword);
+            Console.WriteLine("Home//AIPictures接收到keyword: {0}", keyword);
             TempData["keyword_AI"] = keyword;
-            return View("../Page/Result_AI");
+            TempData.Keep("keyword_AI");
+            return View("~/Views/Page/Result_AI.cshtml");// 待測試
         }
 
 
