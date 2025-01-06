@@ -41,7 +41,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         public IActionResult ToggleImageLikeStatus()
         {
             // 取得傳遞過來的 user 參數
-            string user = Request.Query["user"];
+            string user = Request.Cookies["UserAccount"];
 
             // 檢查用戶是否登入
             bool isLoggedIn = !string.IsNullOrEmpty(user);
