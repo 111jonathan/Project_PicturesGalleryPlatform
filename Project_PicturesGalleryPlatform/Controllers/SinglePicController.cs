@@ -3,6 +3,7 @@ using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
 using System.Security.Claims;
+using Project_PicturesGalleryPlatform.Services.ImageService;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {
@@ -130,6 +131,16 @@ namespace Project_PicturesGalleryPlatform.Controllers
         }
 
 
+            var pictures = _imageService.GetImagesById(id);
+            ViewData["picture"] = pictures;
+            return View();
+        }
+        //public IActionResult SinglePic()
+        //{
+        //    var pictures = _imageService.GetImagesByAccountId(1);
+        //    ViewData["picture"] = pictures;
+        //    return View();
+        //}
     }
 }
 

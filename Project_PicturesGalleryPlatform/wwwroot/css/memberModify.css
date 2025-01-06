@@ -50,3 +50,14 @@
     width: 340px;
   }
 }
+
+/* 新增的 CSS */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* 按鈕在容器內兩邊對齊 */
+    gap: 10px; /* 按鈕之間的間距 */
+}
+
+.u-btn {
+    display: inline-block; /* 確保按鈕為行內塊元素 */
+}

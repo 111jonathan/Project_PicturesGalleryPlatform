@@ -7,8 +7,22 @@ $(document).ready(function () {
         if (isLoading) return;
         isLoading = true;
 
+        var urlParams = new URLSearchParams(window.location.search);
+        var tag = urlParams.get('tag');
+        var keyword = urlParams.get('keyword');
+        var filepath = urlParams.get('filePath');
+        var requestUrl = '';
+
+        if (keyword) {
+            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // �ھ� tag �I�s�������k
+        } else if (tag) {
+            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // �ھ� keyword �I�s�������k
+        } else if (filepath) {
+            var requestUrl = '@Url.Action("GetImagesByFilePath", "Home")';  // �ھ� filepath �I�s�������k
+        }
+
         $.ajax({
-            url: $('#imageResultsContainer').data('url'),
+            url: requestUrl,
             data: { page: page, pageSize: pageSize },
             type: 'GET',
             success: function (data) {
@@ -19,13 +33,7 @@ $(document).ready(function () {
                                  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="X"
                                  data-animation-delay="750">
                                 <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                                    <form action="@Url.Action('ToggleImageLikeStatus', 'Home')" method="post" id="likeForm-${item.id}">
-                                         <input type="hidden" name="id" value="${item.id}" />
-                                         <input type="hidden" name="category" value="${item.category}" />
-                                         <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer;">
-                                                <i class="heart ${item.isLiked ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
-                                         </button>
-                                    </form>
+                                    <i class="heart-btn heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
                                     <h4 class="u-align-center u-text u-text-2">
                                         ${item.tag}<br>
                                     </h4>

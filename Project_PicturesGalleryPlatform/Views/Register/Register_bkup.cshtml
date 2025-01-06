@@ -4,7 +4,6 @@
 }
 
 <head>
-    
     <link rel="stylesheet" href="~/css/Register.css" media="screen">
 </head>
 
@@ -50,14 +49,14 @@
                                     <br />
                                     <div class="u-form-group u-label-none u-form-group-5">
                                         <label for="text-ef9e" class="u-label">Input</label>
-                                        <input type="password" placeholder="輸入密碼" id="text-ef9e" name="password"
+                                        <input type="text" placeholder="輸入密碼" id="text-ef9e" name="password"
                                                class="u-input u-input-rectangle" required="required">
                                         <span class="text-danger" asp-validation-for="password"></span>
                                     </div>
                                     <br />
                                     <div class="u-form-group u-label-none u-form-group-6">
                                         <label for="text-6f13" class="u-label">Input</label>
-                                        <input type="password" placeholder="再次輸入密碼" id="text-6f13" name="passwordConfirm"
+                                        <input type="text" placeholder="再次輸入密碼" id="text-6f13" name="passwordConfirm"
                                                class="u-input u-input-rectangle" required="required">
                                         <span class="text-danger" asp-validation-for="passwordConfirm"></span>
                                     </div>
@@ -81,7 +80,32 @@
 </section>
 
 @section Scripts {
+    <script>
+        document.getElementById('account').addEventListener('input', function () {
+            const pattern = /^[^\d][\w\u4e00-\u9fa5]{1,11}$/;
+            if (!pattern.test(this.value)) {
+                this.setCustomValidity("帳號格式錯誤！");
+            } else {
+                this.setCustomValidity("");
+            }
+        });
 
-<script src="@Url.Content("~/js/validation.js")"></script>
+        document.getElementById('password').addEventListener('input', function () {
+            const pattern = /^[\w!@@#$%^&*]{5,12}$/;
+            if (!pattern.test(this.value)) {
+                this.setCustomValidity("密碼格式錯誤！");
+            } else {
+                this.setCustomValidity("");
+            }
+        });
 
+        document.getElementById('name').addEventListener('input', function () {
+            const pattern = /^[^\d][\w\u4e00-\u9fa5]{1,21}$/;
+            if (!pattern.test(this.value)) {
+                this.setCustomValidity("姓名格式錯誤！");
+            } else {
+                this.setCustomValidity("");
+            }
+        });
+    </script>
 }

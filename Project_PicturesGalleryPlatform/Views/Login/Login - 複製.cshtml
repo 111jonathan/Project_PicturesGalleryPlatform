@@ -28,11 +28,7 @@
                 "name": "temp2",
                 "logo": "@Url.Content("~/images/default-logo.png")"
 
-        }
-        
-    
-    
-    </script>
+        }</script>
     <meta name="theme-color" content="#2ca1ee">
     <meta property="og:title" content="Login">
     <meta property="og:description" content="">
@@ -81,59 +77,103 @@
                         </svg>
                     </a>
                 </div>
-               
                 <div class="u-custom-menu u-nav-container">
                     <ul class="u-nav u-unstyled u-nav-1">
                         <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                               style="padding: 10px 20px;" asp-controller="Home" asp-action="Index">首頁</a>
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="@Url.Action("Index", "Home")" style="padding: 10px 20px;">首頁</a>
                         </li>
                         <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                               asp-controller="Home" asp-action="Index" asp-fragment="carousel_2dab" style="padding: 10px 20px;">關於我們</a>
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="./index.html#carousel_2dab" style="padding: 10px 20px;">關於我們</a>
                         </li>
                         <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                               asp-controller="Home" asp-action="Index" asp-fragment="carousel_79d5" style="padding: 10px 20px;">分類</a>
-                            <div class="u-nav-popup">
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="./index.html#carousel_79d5" style="padding: 10px 20px;">分類</a><div class="u-nav-popup">
                                 <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
                                     <li class="u-nav-item">
-                                        <a class="u-button-style u-nav-link u-white" asp-area="" asp-controller="Food" asp-action="Food">食物</a>
+                                        <a class="u-button-style u-nav-link u-white" href="food.html">食物</a>
                                     </li>
                                     <li class="u-nav-item">
-                                        <a class="u-button-style u-nav-link u-white" asp-area="" asp-controller="Tech" asp-action="Tech">科技</a>
+                                        <a class="u-button-style u-nav-link u-white" href="tech.html">科技</a>
                                     </li>
                                     <li class="u-nav-item">
-                                        <a class="u-button-style u-nav-link u-white" asp-area="" asp-controller="Animal" asp-action="Animal">動物</a>
+                                        <a class="u-button-style u-nav-link u-white" href="animal.html">動物</a>
                                     </li>
                                     <li class="u-nav-item">
-                                        <a class="u-button-style u-nav-link u-white" asp-area="" asp-controller="Scenery" asp-action="Scenery">風景</a>
+                                        <a class="u-button-style u-nav-link u-white" href="scenery.html">風景</a>
                                     </li>
                                     <li class="u-nav-item">
-                                        <a class="u-button-style u-nav-link u-white" asp-area="" asp-controller="People" asp-action="People">人物</a>
+                                        <a class="u-button-style u-nav-link u-white" href="people.html">人物</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                               style="padding: 10px 20px;" asp-area="" asp-controller="Login" asp-action="Login">登入/註冊</a>
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Register.html" style="padding: 10px 20px;">登入/註冊</a>
                         </li>
                         <li class="u-nav-item">
-                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                               style="padding: 10px 20px;" asp-area="" asp-controller="Member" asp-action="Member">我的會員</a>
-                            <div class="u-nav-popup">
+                            <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="member.html" style="padding: 10px 20px;">我的會員</a><div class="u-nav-popup">
                                 <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
                                     <li class="u-nav-item">
-                                        <a class="u-button-style u-nav-link u-white" asp-area="" asp-controller="PicShopping" asp-action="PicShopping">購物車</a>
+                                        <a class="u-button-style u-nav-link u-white" href="picShopping.html">購物車</a>
                                     </li>
                                     <li class="u-nav-item">
-                                        <a class="u-button-style u-nav-link u-white" asp-area="" asp-controller="Member" asp-action="Member">會員資訊</a>
+                                        <a class="u-button-style u-nav-link u-white" href="member.html">會員資訊</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4">
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" href="@Url.Action("Index", "Home")">首頁</a>
+                                </li>
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" href="./index.html#carousel_2dab">關於我們</a>
+                                </li>
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" href="./index.html#carousel_79d5">分類</a><div class="u-nav-popup">
+                                        <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="food.html">食物</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="tech.html">科技</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="animal.html">動物</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="scenery.html">風景</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="people.html">人物</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" href="Register.html">登入/註冊</a>
+                                </li>
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" href="member.html">我的會員</a><div class="u-nav-popup">
+                                        <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="picShopping.html">購物車</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="member.html">會員資訊</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
                 </div>
             </nav><!--shopping_cart-->
             <a class="u-shopping-cart u-shopping-cart-1" href="#sec-2442">
@@ -161,26 +201,12 @@
                         <form method="post" action="@Url.Action("Login", "Login")">
                             <div class="u-form-group u-form-name">
                                 <label for="username-a30d" class="u-label u-text-grey-5 u-label-1">帳號*</label>
-                                <input type="text" placeholder="輸入帳號" id="username-a30d" name="account" class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-input-1" onfocus="clearErrorMessage()" required="">
+                                <input type="text" placeholder="輸入帳號" id="username-a30d" name="account" class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-input-1" required="">
                             </div>
                             <div class="u-form-group u-form-password">
                                 <label for="password-a30d" class="u-label u-text-grey-5 u-label-2">密碼 *</label>
-                                <input type="password" placeholder="輸入密碼" id="password-a30d" name="password" class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-input-2" onfocus="clearErrorMessage()" required="">
-                                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
-                                {
-                                    <br />
-                                    <span id="error-message" style="color: crimson";>@ViewBag.ErrorMessage</span>
-                                }
-                            
+                                <input type="text" placeholder="輸入密碼" id="password-a30d" name="password" class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-input-2" required="">
                             </div>
-                            <script>
-                                function clearErrorMessage() {
-                                    const errorMessage = document.getElementById("error-message");
-                                    if (errorMessage) {
-                                        errorMessage.style.display = "none";
-                                    }
-                                }
-                            </script>
                             <br />
                             <br />
                             <button type="submit" class="u-btn001">登入</button>
@@ -190,7 +216,7 @@
 
                         
                     </div>
-                    <a href="#" class="u-border-1 u-border-active-grey-10 u-border-hover-grey-10 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-login-control u-login-create-account u-none u-text-body-alt-color u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""> </a>
+                    <a href="#" class="u-border-1 u-border-active-grey-10 u-border-hover-grey-10 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-login-control u-login-create-account u-none u-text-body-alt-color u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">忘記密碼？ </a>
                     <a href="@Url.Action("Register", "Register")" class="u-border-1 u-border-active-grey-10 u-border-hover-grey-10 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-login-control u-login-create-account u-none u-text-body-alt-color u-btn-3">沒有帳號？ </a>
                 </div>
             </div>
