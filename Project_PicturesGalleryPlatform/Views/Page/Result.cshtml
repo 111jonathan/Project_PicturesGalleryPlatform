@@ -12,11 +12,9 @@
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn"
             data-animation-duration="1500">
-            @ViewData["keyword"]圖片
         </h2>
         <div class="u-expanded-width u-list u-list-1">
-            <div class="u-repeater u-repeater-1" id="imageResultsContainer" data-url="@Url.Action("GetImagesByPageNumber", "Home")" >
-            </div>
+            <div class="u-repeater u-repeater-1" id="imageResultsContainer" ></div>
         </div>
         <p class="u-align-center u-text u-text-26" data-animation-name="customAnimationIn" data-animation-duration="1500"
            data-animation-delay="750">
@@ -28,15 +26,15 @@
     </div>
 </section>
 <style>
-    .heart{
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        color: red;
-        font-size: 16px;
-        cursor: pointer;
-        z-index: 9999;
-    }
+    .heart {
+            font-size: 20px; /* 減小愛心圖標大小 */
+            cursor: pointer;
+            color: red;
+            position: absolute;
+            top: 20px; /* 距離頁面頂部10px */
+            right: 20px; /* 距離頁面右邊10px */
+            z-index: 1000; /* 保證愛心圖示在其他元素上層 */
+        }
     .u-dialog-section-9 .u-dialog-1 {
         width: 570px;
         min-height: 578px;

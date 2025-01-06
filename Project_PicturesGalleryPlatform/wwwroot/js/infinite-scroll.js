@@ -3,22 +3,29 @@ $(document).ready(function () {
     var pageSize = 40;
     var isLoading = false;
 
+    var urlParams = new URLSearchParams(window.location.search);
+    var tag = urlParams.get('tag');
+    var keyword = urlParams.get('keyword');
+    var filepath = urlParams.get('filePath');
+
+    if (keyword) {
+        $("h2.u-align-center").text(keyword + '\u5716\u7247');
+    } else if (tag) {
+        $("h2.u-align-center").text(tag + '\u5716\u7247');
+    }
+
     function loadItems() {
         if (isLoading) return;
         isLoading = true;
 
-        var urlParams = new URLSearchParams(window.location.search);
-        var tag = urlParams.get('tag');
-        var keyword = urlParams.get('keyword');
-        var filepath = urlParams.get('filePath');
         var requestUrl = '';
 
         if (keyword) {
-            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // ï¿½Ú¾ï¿½ tag ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
+            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // ®Ú¾Ú tag ©I¥sªº±±¨î¾¹¤èªk
         } else if (tag) {
-            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // ï¿½Ú¾ï¿½ keyword ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
+            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // ®Ú¾Ú keyword ©I¥sªº±±¨î¾¹¤èªk
         } else if (filepath) {
-            var requestUrl = '@Url.Action("GetImagesByFilePath", "Home")';  // ï¿½Ú¾ï¿½ filepath ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
+            var requestUrl = '@Url.Action("GetImagesByFilePath", "Home")';  // ®Ú¾Ú filepath ©I¥sªº±±¨î¾¹¤èªk
         }
 
         $.ajax({
@@ -66,36 +73,5 @@ $(document).ready(function () {
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
             loadItems();
         }
-    });
-
-    $(document).on('click', '.heart', function (e) {
-        e.preventDefault();
-
-        var heart = $(this);
-        var imageId = heart.data('id');
-        var isLiked = heart.hasClass('fas');
-
-        $.ajax({
-            url: '/Page/ToggleImageLikeStatus',
-            type: 'POST',
-            data: {
-                id: imageId,
-                category: isLiked ? 'fas' : 'far'
-            },
-            success: function (response) {
-                if (response.success) {
-                    if (isLiked) {
-                        heart.removeClass('fas fa-heart').addClass('far fa-heart');
-                    } else {
-                        heart.removeClass('far fa-heart').addClass('fas fa-heart');
-                    }
-                } else {
-                    window.location.href = '/Login/Login';
-                }
-            },
-            error: function () {
-                alert('An error occurred, please try again.');
-            }
-        });
     });
 });

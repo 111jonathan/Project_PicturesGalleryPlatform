@@ -9,7 +9,7 @@
 
         var urlParams = new URLSearchParams(window.location.search);
         var userAccount = urlParams.get(userAccount);
-        
+
         $.ajax({
             url: `/api/Images/"Favorites"?userAccount=${userAccount}`,
             data: { page: page, pageSize: pageSize },

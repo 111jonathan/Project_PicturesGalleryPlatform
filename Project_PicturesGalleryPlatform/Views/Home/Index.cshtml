@@ -13,7 +13,6 @@
 </head>
 
 
-
 <section class="u-align-center u-clearfix u-container-align-center u-image u-shading u-section-1" id="carousel_e1cb"
          data-image-width="1980" data-image-height="1320">
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -51,13 +50,13 @@
             </div>
         </div>
 
-        <form method="get" action="/page/GetImagesByFile" id="file-form" enctype="multipart/form-data">
+        <form method="post" action="/page/GetImagesByFile" id="file-form" enctype="multipart/form-data">
             <a href="#" class="custom-file-input u-border-grey-75 u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-5-dark-2 u-radius u-text-body-alt-color u-text-hover-white u-btn-2" onclick="triggerFileInput()">瀏覽檔案</a>
             <input type="file" id="file-input" name="uploadfile" onchange="displayFileName()" style="display:none;">
             <span id="file-name" style="display:none; color:#F2F2F2;">未選擇檔案</span>
             <input type="submit" id="submit-btn" hidden>
         </form>
-        
+
         <a href=""
            class="u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-5-dark-2 u-radius u-text-body-alt-color u-text-hover-white u-btn-3">
             上傳檔案
@@ -131,10 +130,10 @@
                 </div>
                 <div class="u-align-center u-border-2 u-border-palette-1-base u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-2">
                     <div class="u-container-layout u-similar-container u-container-layout-2">
-                        <a class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-2"
-                              data-animation-name="customAnimationIn" data-animation-duration="2000" href="@Url.Action("Result", "Page", new { area = "", tag = "風景" })">
+                        <span class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-2"
+                              data-animation-name="customAnimationIn" data-animation-duration="2000" data-href="@Url.Action("SearchTag", "Page", new { area = "", tag = "風景" })">
                             <img src="~/images/4893722-07879c63.png" alt="">
-                        </a>
+                        </span>
                         <h4 class="u-custom-font u-font-montserrat u-text u-text-4">風景</h4>
                     </div>
                 </div>
@@ -149,10 +148,10 @@
                 </div>
                 <div class="u-align-center u-border-2 u-border-palette-1-base u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-4">
                     <div class="u-container-layout u-similar-container u-container-layout-4">
-                        <a class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-4"
-                              data-animation-name="customAnimationIn" data-animation-duration="2000" href="@Url.Action("Result", "Page", new { area = "", tag = "科技" })">
+                        <span class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-4"
+                              data-animation-name="customAnimationIn" data-animation-duration="2000" data-href="@Url.Action("SearchTag", "Page", new { area = "", tag = "科技" })">
                             <img src="~/images/780477-d7fa0b57.png" alt="">
-                        </a>
+                        </span>
                         <h4 class="u-custom-font u-font-montserrat u-text u-text-6">科技</h4>
                     </div>
                 </div>

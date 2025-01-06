@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Services.ImageAnalysisService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
@@ -13,22 +11,17 @@ namespace Project_PicturesGalleryPlatform.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IImageService _imageService;
-        private readonly IMyFavoritesService _myFavoritesService;
         private readonly IImageAnalysisService _imageAnalysisService;
-        private readonly ApplicationDbContext _dbContext;
+        private readonly IMyFavoritesService _myFavoritesService;
 
-        public PageController(ILogger<HomeController> logger, IImageService imageService, IImageAnalysisService imageAnalysisService, ApplicationDbContext dbContext, IMyFavoritesService myFavoritesService)
+        public PageController(ILogger<HomeController> logger, IImageService imageService, IImageAnalysisService imageAnalysisService, IMyFavoritesService myFavoritesService)
         {
             _logger = logger;
-            _dbContext = dbContext;
             _imageService = imageService;
             _imageAnalysisService = imageAnalysisService;
             _myFavoritesService = myFavoritesService;
         }
-        public IActionResult Result()
-        {
-            return View();
-        }
+
         //點擊單照片
         public IActionResult PictureInfo(int id)
         {
@@ -36,35 +29,18 @@ namespace Project_PicturesGalleryPlatform.Controllers
             ViewData["picture"] = pictures;
             return View();
         }
+        public IActionResult Result()
+        {
+            return View();
+        }
 
+        //搜尋類別
         //[HttpPost]
         //public IActionResult GetImagesByFile(IFormFile uploadfile)
         //{
         //    var images =_imageAnalysisService.FindSimilarImagesByImage(uploadfile);
         //    return View("../Page/Pagination");
         //}
-        [HttpPost]
-        public IActionResult ToggleImageLikeStatus(int id, bool isFavorited)
-        {
-            // 從 Cookie 讀取用戶帳號，若帳號不存在則返回失敗
-            String? userAccount = Request.Cookies["UserAccount"];
-            if (string.IsNullOrEmpty(userAccount))
-                return Json(new { success = false });
-
-            // 根據 isFavorited 狀態執行相應的收藏操作
-            if (isFavorited)
-                _myFavoritesService.RemoveFavorite(userAccount, id);
-            else
-                _myFavoritesService.AddFavorite(userAccount, id);
-
-            return Json(new { success = true });  // 返回操作結果
-        }
-        [HttpPost]
-        public IActionResult GetImagesByFile(IFormFile uploadfile)
-        {
-            var images =_imageAnalysisService.FindSimilarImagesByImage(uploadfile);
-            return View("../Page/Pagination");
-        }
         [HttpPost]
         public IActionResult ToggleImageLikeStatus(int id, String category)
         {
@@ -80,16 +56,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
             //    _myFavoritesService.AddFavorite(userId, id);
 
             return Json(new { success = true });
-        }
-        public bool IsImageLiked(int id)
-        {
-            string? userId = HttpContext.Session.GetString("UserId");
-
-            if (string.IsNullOrEmpty(userId))
-            {
-                return false;
-            }
-            return _myFavoritesService.IsPictureInFavorites(userId, id);
         }
     }
 }

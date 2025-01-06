@@ -3,7 +3,6 @@ using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
 using System.Security.Claims;
-using Project_PicturesGalleryPlatform.Services.ImageService;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {
@@ -28,7 +27,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
             ViewData["user"] = HttpContext.Session.GetString("UserId") != null;
 
-            var pictures = _imageService.GetImagesByAccountId(id);
+            var pictures = _imageService.GetImagesById(id);
             if (pictures == null)
             {
                 return NotFound();
@@ -117,30 +116,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
         }
 
-        // 檢查圖片是否已經被用戶喜愛
-        public bool IsImageLiked(int id)
-        {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value; // 用戶ID
-
-            if (string.IsNullOrEmpty(userId))
-            {
-                return false; // 如果用戶尚未登入，返回 false
-            }
-
-            return _myFavoritesService.IsPictureInFavorites(userId, id); // 檢查用戶是否將圖片添加到收藏
-        }
-
-
-            var pictures = _imageService.GetImagesById(id);
-            ViewData["picture"] = pictures;
-            return View();
-        }
-        //public IActionResult SinglePic()
-        //{
-        //    var pictures = _imageService.GetImagesByAccountId(1);
-        //    ViewData["picture"] = pictures;
-        //    return View();
-        //}
     }
 }
 
