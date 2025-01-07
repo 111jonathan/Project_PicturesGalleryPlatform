@@ -21,7 +21,7 @@
                             <div class="u-effect-fade u-gallery-item">
                                 <i class="heart-btn heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
                                 <div class="u-back-slide" data-image-width="810" data-image-height="1080">
-                                    <img class="u-back-image u-expanded" src="${item.url}">
+                                    <img class="u-back-image u-expanded" src="/images2/${item.id}.webp">
                                 </div>
                                 <div class="u-over-slide u-shading u-over-slide-1"></div>
                             </div>

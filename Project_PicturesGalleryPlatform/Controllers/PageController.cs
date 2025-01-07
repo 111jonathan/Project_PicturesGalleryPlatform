@@ -17,7 +17,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
         private readonly IImageService _imageService;
         private readonly IMyFavoritesService _myFavoritesService;
         private readonly IImageAnalysisService _imageAnalysisService;
-        private readonly IMyFavoritesService _myFavoritesService;
         private readonly ApplicationDbContext _dbContext;
 
         public PageController(ILogger<HomeController> logger, IImageService imageService, IImageAnalysisService imageAnalysisService, ApplicationDbContext dbContext, IMyFavoritesService myFavoritesService)

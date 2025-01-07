@@ -49,7 +49,7 @@ $(document).ready(function () {
                                         ${item.tag}<br>
                                     </h4>
                                     <img class="u-expanded-width u-image u-image-default u-image-1" alt="${item.tag}" data-image-width="363"
-                                         data-image-height="363" src="/downloaded_images/${item.id}.webp">
+                                         data-image-height="363" src="/images2/${item.id}.webp">
                                     <p class="u-align-center u-text u-text-3">${item.title}</p>
                                     <a href="../SinglePic/SinglePic?id=${item.id}"
                                        class="u-border-1 u-border-active-palette-3-base u-border-black u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-hover-feature u-none u-text-active-black u-text-body-color u-text-hover-black u-btn-1"
