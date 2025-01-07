@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\documents\\github\\project_picturesgalleryplatform\\project_picturesgalleryplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 211,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T07:46:16.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MyFavorites.js",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\js\\MyFavorites.js",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\js\\MyFavorites.js",
@@ -66,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PageController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\PageController.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\PageController.cs",
@@ -78,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Program.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Program.cs",
@@ -90,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
@@ -110,12 +127,11 @@
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAANgAAAAAAAAAAAAAAOEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T14:07:23.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T14:07:23.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "infinite-scroll.js",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
@@ -127,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Result.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
@@ -139,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ImagesController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
@@ -151,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ImageService.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform\\Services\\ImageService\\ImageService.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Services\\ImageService\\ImageService.cs",
