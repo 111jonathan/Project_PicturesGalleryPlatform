@@ -27,63 +27,38 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
             if (Request.Cookies.ContainsKey("UserAccount"))
             {
-                ViewBag.User = Request.Cookies["UserAccount"]; // Ä Cookies È¡µÃÊ¹ÓÃÕßÃû·Q
+                ViewBag.User = Request.Cookies["UserAccount"]; // ï¿½ï¿½ Cookies È¡ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Q
             }
             else
             {
-                ViewBag.User = null; // Î´µÇÈë•r£¬ÔOÖÃé null
+                ViewBag.User = null; // Î´ï¿½ï¿½ï¿½ï¿½rï¿½ï¿½ï¿½Oï¿½Ãï¿½ null
             }
 
             return View();
         }
 
-        [HttpPost]
-        public IActionResult SearchImages(string keyword)
-        {
-            if (string.IsNullOrWhiteSpace(keyword))
-            {
-                ViewData["ErrorMessage"] = "½Ğ¿é¤J¦³®ÄªºÃöÁä¦r¡C";
-                return View("Index", _imageService.GetRandomImages());
-            }
-
-            ViewData["keyword"] = keyword;
-            var images = _imageService.SearchImagesByKeyword(keyword);
-            return View("../Page/Result");
-        }
 
 
         [HttpPost]
         public IActionResult AIPictures(string keyword)
         {
             if (string.IsNullOrWhiteSpace(keyword))
-            {// ¼È¤£±µ¨üªÅ­È
-                TempData["feedbackMessage"] = "½Ğ¿é¤J¦³®ÄªºÃöÁä¦r¡C";
+            {// ï¿½È¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å­ï¿½
+                TempData["feedbackMessage"] = "ï¿½Ğ¿ï¿½Jï¿½ï¿½ï¿½Äªï¿½ï¿½ï¿½ï¿½ï¿½rï¿½C";
                 TempData["action"] = "Index";
                 TempData["controller"] = "Home";
                 return RedirectToAction("TransitionPage", "Universal");
             }
-            var temps = (keyword.Trim()).Split(" ");// bugºò«æºû­×01/07
+            var temps = (keyword.Trim()).Split(" ");// bugï¿½ï¿½ï¿½ï¿½ï¿½ï¿½01/07
             string newKeyword = "";
             foreach (var temp in temps)
             {
                 newKeyword += temp;
             }
-            Console.WriteLine("Home//AIPictures±µ¦¬&³B²z«ákeyword: {0}", newKeyword);
+            Console.WriteLine("Home//AIPicturesï¿½ï¿½ï¿½ï¿½&ï¿½Bï¿½zï¿½ï¿½keyword: {0}", newKeyword);
             TempData["keyword_AI"] = newKeyword;
             TempData.Keep("keyword_AI");
-            return View("~/Views/Page/Result_AI.cshtml");// «İ´ú¸Õ
-        }
-
-
-        public JsonResult GetImagesByPageNumber(int page, int pageSize)
-        {
-            if (page < 0 || pageSize <= 0)
-            {
-                return Json(new { error = "µL®Äªº­¶­±©Î¨C­¶¤j¤p°Ñ¼Æ¡C" });
-            }
-
-            var images = _imageService.GetImagesByPageNumber(page, pageSize);
-            return Json(images);
+            return View("~/Views/Page/Result_AI.cshtml");// ï¿½İ´ï¿½ï¿½ï¿½
         }
 
 
@@ -96,9 +71,9 @@ namespace Project_PicturesGalleryPlatform.Controllers
         {
             if (Request.Cookies.ContainsKey("UserAccount"))
             {
-                Response.Cookies.Delete("UserAccount"); // „h³ı UserAccount µÄ Cookie
+                Response.Cookies.Delete("UserAccount"); // ï¿½hï¿½ï¿½ UserAccount ï¿½ï¿½ Cookie
             }
-            return RedirectToAction("Index", "Home"); // µÇ³öááŒ§ÏòÊ×?
+            return RedirectToAction("Index", "Home"); // ï¿½Ç³ï¿½ï¿½áŒ§ï¿½ï¿½ï¿½ï¿½?
         }
     }
 }

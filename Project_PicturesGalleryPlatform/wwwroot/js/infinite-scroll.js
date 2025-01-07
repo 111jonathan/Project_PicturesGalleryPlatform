@@ -7,8 +7,24 @@ $(document).ready(function () {
         if (isLoading) return;
         isLoading = true;
 
+        var urlParams = new URLSearchParams(window.location.search);
+        var tag = urlParams.get('tag');
+        var keyword = urlParams.get('keyword');
+        var ids = urlParams.get('ids');
+
+        varids = urlParams.get('ids');
+        var requestUrl = '';
+
+        if (keyword) {
+            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // 根據 tag 呼叫的控制器方法
+        } else if (tag) {
+            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // 根據 keyword 呼叫的控制器方法
+        } else if (ids) {
+            var requestUrl = `/api/Images/SearchByids?ids=${ids}`;;  // 根據 filepath 呼叫的控制器方法
+        }
+
         $.ajax({
-            url: $('#imageResultsContainer').data('url'),
+            url: requestUrl,
             data: { page: page, pageSize: pageSize },
             type: 'GET',
             success: function (data) {
@@ -19,15 +35,16 @@ $(document).ready(function () {
                                  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="X"
                                  data-animation-delay="750">
                                 <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                                    <i class="heart-btn heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
                                     <h4 class="u-align-center u-text u-text-2">
                                         ${item.tag}<br>
                                     </h4>
                                     <img class="u-expanded-width u-image u-image-default u-image-1" alt="${item.tag}" data-image-width="363"
-                                         data-image-height="363" src="${item.url}">
+                                         data-image-height="363" src="/downloaded_images/${item.id}.webp">
                                     <p class="u-align-center u-text u-text-3">${item.title}</p>
                                     <a href="../SinglePic/SinglePic?id=${item.id}"
                                        class="u-border-1 u-border-active-palette-3-base u-border-black u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-hover-feature u-none u-text-active-black u-text-body-color u-text-hover-black u-btn-1"
-                                       data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+                                       data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""/>
                                         More
                                     </a>
                                 </div>
