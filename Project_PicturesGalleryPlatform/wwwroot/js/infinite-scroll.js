@@ -3,24 +3,33 @@ $(document).ready(function () {
     var pageSize = 40;
     var isLoading = false;
 
+    var urlParams = new URLSearchParams(window.location.search);
+    var tag = urlParams.get('tag');
+    var keyword = urlParams.get('keyword');
+    var ids = urlParams.get('ids');
+
+    if (keyword) {
+        $("h2.u-align-center").text(keyword + '\u5716\u7247');
+    } else if (tag) {
+        $("h2.u-align-center").text(tag + '\u5716\u7247');
+    }
+
     function loadItems() {
         if (isLoading) return;
         isLoading = true;
 
-        var urlParams = new URLSearchParams(window.location.search);
-        var tag = urlParams.get('tag');
-        var keyword = urlParams.get('keyword');
-        var ids = urlParams.get('ids');
-
-        varids = urlParams.get('ids');
         var requestUrl = '';
 
         if (keyword) {
-            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // ®Ú¾Ú tag ©I¥sªº±±¨î¾¹¤èªk
+            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // ï¿½Ú¾ï¿½ tag ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
         } else if (tag) {
-            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // ®Ú¾Ú keyword ©I¥sªº±±¨î¾¹¤èªk
+            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // ï¿½Ú¾ï¿½ keyword ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
         } else if (ids) {
-            var requestUrl = `/api/Images/SearchByids?ids=${ids}`;;  // ®Ú¾Ú filepath ©I¥sªº±±¨î¾¹¤èªk
+            var requestUrl = `/api/Images/SearchByids?ids=${ids}`;;  // ï¿½Ú¾ï¿½ filepath ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
+        }if (!requestUrl) {
+            console.error("No valid parameters to generate request URL.");
+            isLoading = false;
+            return;
         }
 
         $.ajax({
