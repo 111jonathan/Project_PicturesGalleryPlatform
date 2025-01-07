@@ -12,15 +12,15 @@ namespace Project_PicturesGalleryPlatform.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IImageService _imageService;
-        private readonly IMyFavoritesService _myFavoritesService;
+        //private readonly IMyFavoritesService _myFavoritesService;
         protected readonly IRatingService _ratingService;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public SinglePicController(ILogger<HomeController> logger, IImageService imageService, IMyFavoritesService myFavoritesService, IRatingService ratingService, IWebHostEnvironment webHostEnvironment)
+        public SinglePicController(ILogger<HomeController> logger, IImageService imageService, IRatingService ratingService, IWebHostEnvironment webHostEnvironment)
         {
             _logger = logger;
             _imageService = imageService;
-            _myFavoritesService = myFavoritesService;
+            //_myFavoritesService = myFavoritesService;
             _ratingService = ratingService;
             _webHostEnvironment = webHostEnvironment;
         }
@@ -43,14 +43,35 @@ namespace Project_PicturesGalleryPlatform.Controllers
         [HttpGet]
         public IActionResult ToggleImageLikeStatus()
         {
-            // 取得傳遞過來的 user 參數
-            string user = Request.Query["user"];
+            // 嘗試從 Cookie 中獲取 "UserAccount" 值
+            string user = Request.Cookies["UserAccount"];
 
             // 檢查用戶是否登入
             bool isLoggedIn = !string.IsNullOrEmpty(user);
 
+            // 如果用戶已登入，您可以額外提供一些用戶資料
+            if (isLoggedIn)
+            {
+                // 假設您可以從用戶帳號取得用戶的其他資訊，例如用戶名
+                var userInfo = GetUserInfo(user); // 假設 GetUserInfo 會根據 UserAccount 返回用戶資料
+                return Json(new { isLoggedIn, userInfo });
+            }
+
+            // 如果用戶未登入，只返回登入狀態
             return Json(new { isLoggedIn });
         }
+
+        // 假設有一個方法來根據用戶帳號獲取用戶資料
+        private object GetUserInfo(string userAccount)
+        {
+            // 這裡根據實際情況取得用戶資料，例如：
+            return new
+            {
+                UserName = "JohnDoe",  // 假設返回的用戶資料
+                Email = "johndoe@example.com"
+            };
+        }
+
 
         // 提交評分
         [HttpPost]

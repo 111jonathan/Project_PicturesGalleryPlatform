@@ -3,16 +3,14 @@
     const stars = document.querySelectorAll(".star-rating i");
     const submitButton = document.getElementById("submit-rating");
 
-    let isLoggedIn = false;
-    let user = getQueryParam("user");  // 假設有一個 user 參數
+    // 從 Cookie 獲取用戶登入狀態
+    let isLoggedIn = checkLoginStatus();    // 檢查用戶是否登入
 
     // 確認用戶是否登入
-    function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
+    function checkLoginStatus() {
+        const userAccount = getCookie("UserAccount");  // 讀取 Cookie 中的 "UserAccount"
+        return Boolean(userAccount);   // 如果存在 "UserAccount"，則認為用戶已登入
     }
-
-
 
     // 點擊提交按鈕
     submitButton.addEventListener("click", async () => {
@@ -22,6 +20,15 @@
                 window.location.href = '/Login/Login'; // 重定向到登入頁面
             }
             return;
+        }
+
+        // 讀取 Cookie 中的 "UserAccount"
+        const userAccount = getCookie("UserAccount");
+        if (userAccount) {
+            console.log("UserAccount:", userAccount);
+            // 您可以在這裡處理使用者帳戶的邏輯
+        } else {
+            console.log("UserAccount Cookie 不存在");
         }
 
         // 確保選擇了評分
@@ -45,7 +52,7 @@
                     'X-CSRF-TOKEN': csrfToken
                 },
                 body: JSON.stringify({
-                    user: user,
+                    user: userAccount,  // 使用從 Cookie 獲取的 userAccount
                     productId: productId,
                     rating: rating
                 })
@@ -95,5 +102,17 @@
                 star.classList.add("far");
             }
         });
+    }
+
+    // 輔助函數：讀取 Cookie
+    function getCookie(name) {
+        const cookieArr = document.cookie.split(';');
+        for (let i = 0; i < cookieArr.length; i++) {
+            let cookie = cookieArr[i].trim();
+            if (cookie.startsWith(name + '=')) {
+                return cookie.substring(name.length + 1);
+            }
+        }
+        return null;
     }
 });

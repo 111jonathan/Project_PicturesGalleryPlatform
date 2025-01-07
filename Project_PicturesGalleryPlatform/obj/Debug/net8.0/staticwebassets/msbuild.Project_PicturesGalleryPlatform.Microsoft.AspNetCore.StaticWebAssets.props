@@ -10686,8 +10686,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>v1rxbcg0le</Fingerprint>
-      <Integrity>M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E=</Integrity>
+      <Fingerprint>g1s5jvy45y</Fingerprint>
+      <Integrity>NAzbbDochRcT9FAAnzKTC3LVJsu+31JAnfxwGpx5Tv0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PicScore.js'))</OriginalItemSpec>

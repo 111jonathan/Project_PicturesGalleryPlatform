@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PpfxZtokvbs97tFjlAc+6H364YhVx29NjKtekBhHYjI=",
+  "Hash": "T5AoSoAZbrVDW4wPGKir/Rj+ulcPFjs6SEyYFNrvztA=",
   "Source": "Project_PicturesGalleryPlatform",
   "BasePath": "_content/Project_PicturesGalleryPlatform",
   "Mode": "Default",
@@ -12526,8 +12526,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "v1rxbcg0le",
-      "Integrity": "M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E=",
+      "Fingerprint": "g1s5jvy45y",
+      "Integrity": "NAzbbDochRcT9FAAnzKTC3LVJsu+31JAnfxwGpx5Tv0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\PicScore.js"
@@ -62379,6 +62379,51 @@
       ]
     },
     {
+      "Route": "js/PicScore.g1s5jvy45y.js",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NAzbbDochRcT9FAAnzKTC3LVJsu+31JAnfxwGpx5Tv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Jan 2025 03:41:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1s5jvy45y"
+        },
+        {
+          "Name": "label",
+          "Value": "js/PicScore.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NAzbbDochRcT9FAAnzKTC3LVJsu+31JAnfxwGpx5Tv0="
+        }
+      ]
+    },
+    {
       "Route": "js/PicScore.js",
       "AssetFile": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
       "Selectors": [],
@@ -62389,7 +62434,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3368"
+          "Value": "4221"
         },
         {
           "Name": "Content-Type",
@@ -62397,11 +62442,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E=\""
+          "Value": "\"NAzbbDochRcT9FAAnzKTC3LVJsu+31JAnfxwGpx5Tv0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Jan 2025 03:08:10 GMT"
+          "Value": "Tue, 07 Jan 2025 03:41:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -62411,52 +62456,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E="
-        }
-      ]
-    },
-    {
-      "Route": "js/PicScore.v1rxbcg0le.js",
-      "AssetFile": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3368"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 07 Jan 2025 03:08:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "v1rxbcg0le"
-        },
-        {
-          "Name": "label",
-          "Value": "js/PicScore.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E="
+          "Value": "sha256-NAzbbDochRcT9FAAnzKTC3LVJsu+31JAnfxwGpx5Tv0="
         }
       ]
     },

@@ -7116,17 +7116,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wnnarfmgn2"},{"Name":"integrity","Value":"sha256-TI3JMs1jhndgJussGY4wpaz8xy4xq//\u002BogOoWeeAqZM="},{"Name":"label","Value":"_content/Project_PicturesGalleryPlatform/js/nicepage.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"391325"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022TI3JMs1jhndgJussGY4wpaz8xy4xq//\u002BogOoWeeAqZM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 14:18:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Project_PicturesGalleryPlatform/js/PicScore.g1s5jvy45y.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PicScore.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g1s5jvy45y"},{"Name":"integrity","Value":"sha256-NAzbbDochRcT9FAAnzKTC3LVJsu\u002B31JAnfxwGpx5Tv0="},{"Name":"label","Value":"_content/Project_PicturesGalleryPlatform/js/PicScore.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4221"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NAzbbDochRcT9FAAnzKTC3LVJsu\u002B31JAnfxwGpx5Tv0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Jan 2025 03:41:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Project_PicturesGalleryPlatform/js/PicScore.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PicScore.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3368"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Jan 2025 03:08:10 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Project_PicturesGalleryPlatform/js/PicScore.v1rxbcg0le.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PicScore.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v1rxbcg0le"},{"Name":"integrity","Value":"sha256-M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E="},{"Name":"label","Value":"_content/Project_PicturesGalleryPlatform/js/PicScore.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3368"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022M6LvwROV2mt4AJHSDp4QehXy5749D/Doj5bAHvzSc4E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Jan 2025 03:08:10 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NAzbbDochRcT9FAAnzKTC3LVJsu\u002B31JAnfxwGpx5Tv0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4221"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NAzbbDochRcT9FAAnzKTC3LVJsu\u002B31JAnfxwGpx5Tv0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 07 Jan 2025 03:41:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Project_PicturesGalleryPlatform/js/site.fr7q2aak1r.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
