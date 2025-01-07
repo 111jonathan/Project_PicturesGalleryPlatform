@@ -14,7 +14,7 @@ $(document).ready(function () {
             success: function (data) {
                 if (data.length > 0) {
                     data.forEach(function (item) {
-                        $('#imageResultsContainer').append(`<a href="https://localhost:7128/Page/PictureInfo?id= ${item.id}" class="item-link">
+                        $('#imageResultsContainer').append(`<a href="https://localhost:7128/SinglePic/SinglePic?id= ${item.id}" class="item-link">
                                                         <img src="${item.url}" alt="Item Image" class="item-image" />
                                                         <div class="preview">
                                                             <img src="${item.url}" alt="Preview Image" />
