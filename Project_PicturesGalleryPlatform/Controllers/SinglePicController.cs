@@ -18,7 +18,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
         public IActionResult SinglePic(int id)
         {
-            var pictures = _imageService.GetImagesByAccountId(id);
+            var pictures = _imageService.GetImagesById(id);
             ViewData["picture"] = pictures;
             return View();
         }

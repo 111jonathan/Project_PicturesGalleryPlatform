@@ -17,7 +17,7 @@
         <h1 class="u-custom-font u-font-montserrat u-text u-text-grey-75 u-text-1"> &nbsp;圖庫平台 </h1>
         <h3 class="u-custom-font u-font-lato u-text u-text-2"> WE SEARCH AND FIND PICTURE FOR YOU </h3>
         <div class="u-form u-form-1">
-            <form method="post" action="home/SearchImages"
+            <form method="get" action="Page/Result"
                   class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px" source="email">
                 <div class="u-form-group u-form-name u-label-top">
                     <label for="name-558c" class="u-label">type something...</label>
@@ -64,11 +64,10 @@
             </div>
         </div>
 
-        <form method="post" action="/page/GetImagesByFile" id="file-form" enctype="multipart/form-data">
+        <form id="file-form" enctype="multipart/form-data">
             <a href="#" class="custom-file-input u-border-grey-75 u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-5-dark-2 u-radius u-text-body-alt-color u-text-hover-white u-btn-2" onclick="triggerFileInput()">瀏覽檔案</a>
             <input type="file" id="file-input" name="uploadfile" onchange="displayFileName()" style="display:none;">
             <span id="file-name" style="display:none; color:#F2F2F2;">未選擇檔案</span>
-            <input type="submit" id="submit-btn" hidden>
         </form>
         
         <a href=""
@@ -135,46 +134,46 @@
             <div class="u-repeater u-repeater-1">
                 <div class="u-align-center u-border-2 u-border-palette-1-base u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-1">
                     <div class="u-container-layout u-similar-container u-container-layout-1">
-                        <span class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-1"
-                              data-animation-name="customAnimationIn" data-animation-duration="2000" data-href="@Url.Action("SearchTag", "Page", new { area = "", tag = "抽象" })">
+                        <a class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-1"
+                              data-animation-name="customAnimationIn" data-animation-duration="2000" href="@Url.Action("Result", "Page", new { area = "", tag = "抽象" })">
                             <img src="~/images/3126647-37e670d1.png" alt="">
-                        </span>
+                        </a>
                         <h4 class="u-custom-font u-font-montserrat u-text u-text-3">抽象</h4>
                     </div>
                 </div>
                 <div class="u-align-center u-border-2 u-border-palette-1-base u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-2">
                     <div class="u-container-layout u-similar-container u-container-layout-2">
-                        <span class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-2"
-                              data-animation-name="customAnimationIn" data-animation-duration="2000" data-href="@Url.Action("SearchTag", "Page", new { area = "", tag = "風景" })">
+                        <a class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-2"
+                              data-animation-name="customAnimationIn" data-animation-duration="2000" href="@Url.Action("Result", "Page", new { area = "", tag = "風景" })">
                             <img src="~/images/4893722-07879c63.png" alt="">
-                        </span>
+                        </a>
                         <h4 class="u-custom-font u-font-montserrat u-text u-text-4">風景</h4>
                     </div>
                 </div>
                 <div class="u-align-center u-border-2 u-border-palette-1-base u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-3">
                     <div class="u-container-layout u-similar-container u-container-layout-3">
-                        <span class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-3"
-                              data-animation-name="customAnimationIn" data-animation-duration="2000" data-href="@Url.Action("SearchTag", "Page", new { area = "", tag = "動物" })">
+                        <a class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-3"
+                              data-animation-name="customAnimationIn" data-animation-duration="2000" href="@Url.Action("Result", "Page", new { area = "", tag = "動物" })">
                             <img src="~/images/1776896-30a5aba1.png" alt="">
-                        </span>
+                        </a>
                         <h4 class="u-custom-font u-font-montserrat u-text u-text-5">動物</h4>
                     </div>
                 </div>
                 <div class="u-align-center u-border-2 u-border-palette-1-base u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-4">
                     <div class="u-container-layout u-similar-container u-container-layout-4">
-                        <span class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-4"
-                              data-animation-name="customAnimationIn" data-animation-duration="2000" data-href="@Url.Action("SearchTag", "Page", new { area = "", tag = "科技" })">
+                        <a class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-4"
+                              data-animation-name="customAnimationIn" data-animation-duration="2000" href="@Url.Action("Result", "Page", new { area = "", tag = "科技" })">
                             <img src="~/images/780477-d7fa0b57.png" alt="">
-                        </span>
+                        </a>
                         <h4 class="u-custom-font u-font-montserrat u-text u-text-6">科技</h4>
                     </div>
                 </div>
                 <div class="u-align-center u-border-2 u-border-palette-1-base u-container-align-center u-container-style u-image u-list-item u-repeater-item u-shading u-shape-rectangle u-image-5">
                     <div class="u-container-layout u-similar-container u-container-layout-5">
-                        <span class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-5"
-                              data-animation-name="customAnimationIn" data-animation-duration="2000" data-href="@Url.Action("SearchTag", "Page", new { area = "", tag = "食物" })">
+                        <a class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-5"
+                              data-animation-name="customAnimationIn" data-animation-duration="2000" href="@Url.Action("Result", "Page", new { area = "", tag = "食物" })">
                             <img src="~/images/738079-790e5e05.png" alt="">
-                        </span>
+                        </a>
                         <h4 class="u-custom-font u-font-montserrat u-text u-text-7">食物 </h4>
                     </div>
                 </div>
@@ -347,28 +346,39 @@
 </section>
 @section scripts {
     <script>
-        // 觸發隱藏的檔案選擇框
         function triggerFileInput() {
-            document.getElementById('file-input').click(); // 模擬點擊文件選擇框
+            document.getElementById('file-input').click(); // 模擬點擊檔案選擇框
         }
 
-        // 顯示選擇的檔案名稱並提交表單
         function displayFileName() {
             const fileInput = document.getElementById('file-input');
-            const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '未選擇檔案';
             const fileNameSpan = document.getElementById('file-name');
 
             // 檢查是否選擇了檔案
             if (fileInput.files.length > 0) {
-                // 顯示選擇的檔案名稱
+                const fileName = fileInput.files[0].name;
                 fileNameSpan.textContent = fileName;
-                fileNameSpan.style.display = 'inline'; // 顯示檔案名稱的 span
-                // 自動提交表單
-                document.getElementById('file-form').submit();
+                fileNameSpan.style.display = 'inline'; // 顯示檔案名稱
+
+                const formData = new FormData();
+                formData.append('file', fileInput.files[0]);
+
+                // 上傳檔案並處理回應
+                fetch('http://127.0.0.1:5001/upload', { method: 'POST', body: formData })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.filtered_image_names && data.filtered_image_names.length > 0) {
+                            const ids = data.filtered_image_names.join(',');
+                            window.location.href = `/Page/Result?ids=${ids}`;
+                        } else {
+                            alert('找不到相似圖片');
+                        }
+                    })
+                    .catch(error => alert('上傳過程中發生錯誤，請稍後再試。'));
             } else {
-                // 隱藏檔案名稱的 span
-                fileNameSpan.style.display = 'none';
+                fileNameSpan.style.display = 'none'; // 隱藏檔案名稱
             }
         }
     </script>
+
 }

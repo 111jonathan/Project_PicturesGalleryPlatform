@@ -7,7 +7,7 @@
             }
         }); 
 
-        // 改動: 新增 Name 使用 RE 檢查需在 2~12 個字元
+        // 改動: 新增 Name 使用 RE 檢查需在 2~12 ?字元
         document.getElementById('name-9558').addEventListener('input', function () {
             const pattern = /^[\w\u4e00-\u9fa5]{2,22}$/;
             if (!pattern.test(this.value)) {
@@ -27,7 +27,7 @@
             }
         });
 
-        // 改動: 密碼需在 5~12 個字元
+        // 改動: 密碼需在 5~12 ?字元
         document.getElementById('text-ef9e').addEventListener('input', function () {
             const pattern = /^[\w!@@#$%^&*]{5,12}$/;
             if (!pattern.test(this.value)) {
