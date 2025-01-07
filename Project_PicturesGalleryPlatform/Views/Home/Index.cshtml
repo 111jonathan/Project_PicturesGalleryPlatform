@@ -253,6 +253,11 @@
 <section class="u-align-center u-clearfix u-container-align-center u-grey-5 u-section-6" id="carousel_f5b8">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-text-1">聯絡我們</h1>
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="error-message" style="color: red; font-weight: bold;">@ViewBag.ErrorMessage</div>
+        }
+
         <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-white u-layout-wrap-1">
             <div class="u-layout">
                 <div class="u-layout-row">
@@ -260,15 +265,21 @@
                         <div class="u-container-layout u-container-layout-1">
                             <div class="u-image u-image-circle u-image-1" data-image-width="720" data-image-height="1080"
                                  data-animation-name="customAnimationIn" data-animation-duration="2000"></div>
-                            <p class="u-text u-text-default u-text-2">預留（敘述）</p>
+                            <p class="u-text u-text-default u-text-2"> &emsp;&emsp;&emsp; 您的想法   我們很在意</p>
                         </div>
                     </div>
                     <div class="u-container-style u-layout-cell u-size-38 u-layout-cell-2">
                         <div class="u-container-layout u-container-layout-2">
                             <div class="u-form u-form-1">
-                                <form action="https://forms.nicepagesrv.com/v2/form/process"
-                                      class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" source="email"
-                                      name="form">
+                               
+                                
+
+                                <form action="@Url.Action("msgConfirm", "Home")"
+                                          method="post"
+                                          class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+                                          style="padding: 0;"
+                                          source="email"
+                                          name="form">
                                     <div class="u-form-group u-form-name u-form-group-1">
                                         <label for="name-f2a8" class="u-label u-label-1">名字</label>
                                         <input type="text" placeholder="輸入名字" id="name-f2a8" name="name"
@@ -280,9 +291,9 @@
                                         <div class="u-form-select-wrapper">
                                             <select id="select-8e9d" name="select"
                                                     class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle">
-                                                <option value="問題類別Ａ" data-calc="">問題類別Ａ</option>
-                                                <option value="問題類別Ｂ" data-calc="">問題類別Ｂ</option>
-                                                <option value="問題類別Ｃ" data-calc="">問題類別Ｃ</option>
+                                                <option value="問題類別Ａ" data-calc="">圖庫種類添加</option>
+                                                <option value="問題類別Ｂ" data-calc="">使用流程問題</option>
+                                                <option value="問題類別Ｃ" data-calc="">其他使用建議</option>
                                             </select>
                                             <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
@@ -306,10 +317,12 @@
                                                   required=""></textarea>
                                     </div>
                                     <div class="u-align-left u-form-group u-form-submit u-form-group-5">
-                                        <a href="#"
-                                           class="u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-palette-1-base u-btn-1">提交</a>
-                                        <input type="submit" value="submit" class="u-form-control-hidden">
+                                        <button type="submit"
+                                                class="u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-palette-1-base u-btn-1">
+                                            提交
+                                        </button>
                                     </div>
+
                                     <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                                     <div class="u-form-send-error u-form-send-message">
                                         Unable to send your message. Please fix errors

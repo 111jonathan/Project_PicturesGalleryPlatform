@@ -36,6 +36,22 @@ namespace Project_PicturesGalleryPlatform.Controllers
         }
 
         [HttpPost]
+        public IActionResult msgConfirm(string name, string phone, string message)
+        {
+            // 驗證所有必填欄位是否有值
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(message))
+            {
+                // 返回表單頁面，並顯示錯誤消息
+                ViewBag.ErrorMessage = "請確保所有欄位均已填寫！";
+                return View("Index"); // 假設表單在 Index.cshtml
+            }
+
+            // 所有欄位均有效，跳轉到確認頁面
+            return View("msgConfirm");
+        }
+
+
+        [HttpPost]
         public IActionResult SearchImages(string keyword)
         {
             if (string.IsNullOrWhiteSpace(keyword))
