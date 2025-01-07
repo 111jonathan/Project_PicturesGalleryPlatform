@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Project_PicturesGalleryPlatform.Models;
-using System.Linq;
-using Project_PicturesGalleryPlatform.Models;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {
@@ -51,7 +49,5 @@ namespace Project_PicturesGalleryPlatform.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-
-
     }
 }

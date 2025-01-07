@@ -3,24 +3,35 @@ $(document).ready(function () {
     var pageSize = 40;
     var isLoading = false;
 
+    var urlParams = new URLSearchParams(window.location.search);
+    var tag = urlParams.get('tag');
+    var keyword = urlParams.get('keyword');
+    var ids = urlParams.get('ids');
+
+    if (keyword) {
+        $("h2.u-align-center").text(keyword + '\u5716\u7247');
+    } else if (tag) {
+        $("h2.u-align-center").text(tag + '\u5716\u7247');
+    }
+
     function loadItems() {
         if (isLoading) return;
         isLoading = true;
 
-        var urlParams = new URLSearchParams(window.location.search);
-        var tag = urlParams.get('tag');
-        var keyword = urlParams.get('keyword');
-        var ids = urlParams.get('ids');
-
-        varids = urlParams.get('ids');
         var requestUrl = '';
 
         if (keyword) {
-            var requestUrl = `/api/Images/Search?keyword=${keyword}`;  // ®Ú¾Ú tag ©I¥sªº±±¨î¾¹¤èªk
+            var requestUrl = `/api/Images/Search?keyword=${encodeURIComponent(keyword)}`;  // ï¿½Ú¾ï¿½ tag ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
         } else if (tag) {
-            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // ®Ú¾Ú keyword ©I¥sªº±±¨î¾¹¤èªk
+            var requestUrl = `/api/Images/SearchByTag?tag=${tag}`;  // ï¿½Ú¾ï¿½ keyword ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
         } else if (ids) {
-            var requestUrl = `/api/Images/SearchByids?ids=${ids}`;;  // ®Ú¾Ú filepath ©I¥sªº±±¨î¾¹¤èªk
+            var requestUrl = `/api/Images/SearchByids?ids=${ids}`;;  // ï¿½Ú¾ï¿½ filepath ï¿½Iï¿½sï¿½ï¿½ï¿½ï¿½ï¿½î¾¹ï¿½ï¿½k
+        }
+
+        if (!requestUrl) {
+            console.error("No valid parameters to generate request URL.");
+            isLoading = false;
+            return;
         }
 
         $.ajax({
@@ -40,7 +51,7 @@ $(document).ready(function () {
                                         ${item.tag}<br>
                                     </h4>
                                     <img class="u-expanded-width u-image u-image-default u-image-1" alt="${item.tag}" data-image-width="363"
-                                         data-image-height="363" src="/downloaded_images/${item.id}.webp">
+                                         data-image-height="363" src="/images2/${item.id}.webp">
                                     <p class="u-align-center u-text u-text-3">${item.title}</p>
                                     <a href="../SinglePic/SinglePic?id=${item.id}"
                                        class="u-border-1 u-border-active-palette-3-base u-border-black u-border-hover-palette-3-base u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-hover-feature u-none u-text-active-black u-text-body-color u-text-hover-black u-btn-1"

@@ -5,6 +5,7 @@ using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Models.AIPicturesModels;
 
+using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 
 namespace Project_PicturesGalleryPlatform.Controllers
 {
@@ -12,19 +13,18 @@ namespace Project_PicturesGalleryPlatform.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IImageService _imageService;
+        private readonly IRatingService _ratingService;
 
-        public HomeController(ILogger<HomeController> logger, IImageService imageService)
+        public HomeController(ILogger<HomeController> logger, IImageService imageService, IRatingService ratingService)
         {
             _logger = logger;
             _imageService = imageService;
+            _ratingService = ratingService;
         }
+
 
         public IActionResult Index()
         {
-            //var pictures = _imageService.GetImagesByAccountId(1);
-            //ViewData["picture"] = pictures;
-            //return View("../Page/PictureInfo");
-
             if (Request.Cookies.ContainsKey("UserAccount"))
             {
                 ViewBag.User = Request.Cookies["UserAccount"]; // �� Cookies ȡ��ʹ�������Q
@@ -33,7 +33,9 @@ namespace Project_PicturesGalleryPlatform.Controllers
             {
                 ViewBag.User = null; // δ����r���O�Þ� null
             }
-
+            // 載入資料庫評分表單
+            var totalScores = _ratingService.GetUserTotalScore();
+            ViewData["TotalScores"] = totalScores;
             return View();
         }
 

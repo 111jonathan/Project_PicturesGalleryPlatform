@@ -819,35 +819,6 @@
   background-image: none;
 }
 
-/* 新增樣式：Navbar 與 User Info */
-.navbar {
-    display: flex;
-    justify-content: space-between; /* 左右對齊 */
-    align-items: center; /* 垂直置中 */
-    width: 100%;
-}
-
-.user-info {
-    display: flex;
-    align-items: center;
-}
-
-    .user-info span {
-        margin-right: 10px;
-        font-size: 16px;
-        color: #333;
-    }
-
-    .user-info a {
-        text-decoration: none;
-        color: #007bff;
-        margin-left: 10px;
-    }
-
-    .user-info a:hover {
-        text-decoration: underline;
-    }
-
 @media (max-width: 1199px) {
   .u-section-6 .u-sheet-1 {
     min-height: 691px;

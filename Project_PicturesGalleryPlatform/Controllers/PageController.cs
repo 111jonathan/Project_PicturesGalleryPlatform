@@ -15,8 +15,8 @@ namespace Project_PicturesGalleryPlatform.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IImageService _imageService;
-        private readonly IMyFavoritesService _myFavoritesService;
         private readonly IImageAnalysisService _imageAnalysisService;
+        private readonly IMyFavoritesService _myFavoritesService;
         private readonly ApplicationDbContext _dbContext;
 
         public PageController(ILogger<HomeController> logger, IImageService imageService, IImageAnalysisService imageAnalysisService, ApplicationDbContext dbContext, IMyFavoritesService myFavoritesService)
@@ -27,10 +27,12 @@ namespace Project_PicturesGalleryPlatform.Controllers
             _imageAnalysisService = imageAnalysisService;
             _myFavoritesService = myFavoritesService;
         }
+
         public IActionResult Result()
         {
             return View();
         }
+
         //點擊單照片
         public IActionResult PictureInfo(int id)
         {

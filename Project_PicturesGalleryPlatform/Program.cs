@@ -1,4 +1,4 @@
-using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
+﻿using Project_PicturesGalleryPlatform.Repositories.ImageRepository;
 using Project_PicturesGalleryPlatform.Repositories.MyFavoritesRepository;
 using Project_PicturesGalleryPlatform.Services.ImageAnalysisService.PythonImageAnalysisExecutor;
 using Project_PicturesGalleryPlatform.Services.ImageAnalysisService;
@@ -9,6 +9,7 @@ using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories;
 using Project_PicturesGalleryPlatform.Services;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
+builder.Services.AddScoped<IRatingService, RatingService>();
 builder.Services.AddScoped<IMyFavoritesRepository, MyFavoritesRepository>();
 builder.Services.AddScoped<IMyFavoritesService, MyFavoritesService>();
 
