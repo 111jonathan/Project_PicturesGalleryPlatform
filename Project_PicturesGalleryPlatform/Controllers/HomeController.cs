@@ -40,21 +40,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
         }
 
         [HttpPost]
-        public IActionResult SearchImages(string keyword)
-        {
-            if (string.IsNullOrWhiteSpace(keyword))
-            {
-                ViewData["ErrorMessage"] = "�п�J���Ī�����r�C";
-                return View("Index", _imageService.GetRandomImages());
-            }
-
-            ViewData["keyword"] = keyword;
-            var images = _imageService.SearchImagesByKeyword(keyword);
-            return View("../Page/Result");
-        }
-
-
-        [HttpPost]
         public IActionResult AIPictures(string keyword)
         {
             if (string.IsNullOrWhiteSpace(keyword))
@@ -75,20 +60,6 @@ namespace Project_PicturesGalleryPlatform.Controllers
             TempData.Keep("keyword_AI");
             return View("~/Views/Page/Result_AI.cshtml");// �ݴ���
         }
-
-
-        public JsonResult GetImagesByPageNumber(int page, int pageSize)
-        {
-            if (page < 0 || pageSize <= 0)
-            {
-                return Json(new { error = "�L�Ī������ΨC���j�p�ѼơC" });
-            }
-
-            var images = _imageService.GetImagesByPageNumber(page, pageSize);
-            return Json(images);
-        }
-
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
