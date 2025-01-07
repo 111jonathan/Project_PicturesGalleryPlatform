@@ -199,15 +199,19 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 return RedirectToAction("Upload_transition");
             }
         }
-        public IActionResult MyFavorites()
+        public IActionResult Favorites()
         {
             String? userAccount = Request.Cookies["UserAccount"];
 
             if (string.IsNullOrEmpty(userAccount))
                 return View("../Login/Login");
-            return View(userAccount);
+            return RedirectToAction("MyFavorites", new { userAccount = userAccount });
         }
 
+        public IActionResult MyFavorites()
+        {
+            return View();
+        }
 
 
         public IActionResult Upload_transition()

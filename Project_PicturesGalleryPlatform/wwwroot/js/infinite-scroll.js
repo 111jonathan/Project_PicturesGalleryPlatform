@@ -44,7 +44,10 @@ $(document).ready(function () {
                                  data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="X"
                                  data-animation-delay="750">
                                 <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                                    <i class="heart-btn heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
+                                    <a href="javascript:void(0);" class="heart-btn" data-id="${item.id}">
+                                      <i class="heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" style="color: red;"></i>
+                                    </a>
+
                                     <h4 class="u-align-center u-text u-text-2">
                                         ${item.tag}<br>
                                     </h4>

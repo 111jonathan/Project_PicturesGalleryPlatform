@@ -15,6 +15,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         }
 
         // 顯示登入頁面
+        [HttpGet]
         public IActionResult Login()
         {
             return View();

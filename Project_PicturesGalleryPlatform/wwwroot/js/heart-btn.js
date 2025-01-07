@@ -1,14 +1,15 @@
 ﻿$(document).on('click', '.heart-btn', function () {
     var heartBtn = $(this);
     var imageId = heartBtn.data('id');
-    var isFavorited = heartBtn.find(".heart").hasClass('fas');
+    var heartIcon = heartBtn.find('i');
+    var isFavorited = heartIcon.hasClass('fas');
 
     $.ajax({
         url: '/Page/ToggleImageLikeStatus',
         type: 'POST',
         data: {
             id: imageId,
-            isFavorited: isFavorited ? 'fas' : 'far'
+            isFavorited: isFavorited
         },
         success: function (response) {
             if (response.success) {

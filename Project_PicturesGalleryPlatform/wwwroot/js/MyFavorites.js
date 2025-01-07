@@ -8,10 +8,10 @@
         isLoading = true;
 
         var urlParams = new URLSearchParams(window.location.search);
-        var userAccount = urlParams.get(userAccount);
+        var userAccount = urlParams.get('userAccount');
         
         $.ajax({
-            url: `/api/Images/"Favorites"?userAccount=${userAccount}`,
+            url: `/api/Images/Favorites?userAccount=${userAccount}`,
             data: { page: page, pageSize: pageSize },
             type: 'GET',
             success: function (data) {
@@ -19,10 +19,12 @@
                     data.forEach(function (item) {
                         $('#MyFavoritesContainer').append(`
                             <div class="u-effect-fade u-gallery-item">
-                                <i class="heart-btn heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" data-id="${item.id}"></i>
-                                <div class="u-back-slide" data-image-width="810" data-image-height="1080">
-                                    <img class="u-back-image u-expanded" src="/images2/${item.id}.webp">
-                                </div>
+                                <a href="../SinglePic/SinglePic?id=${item.id}" class="u-back-slide" data-image-width="810" data-image-height="1080">
+                                    <img class="u-back-image u-expanded" src="/images2/${item.id}.webp" alt="Image ${item.id}">
+                                </a>
+                                <a href="javascript:void(0);" class="heart-btn" data-id="${item.id}">
+                                      <i class="heart ${item.isFavorited ? 'fas fa-heart' : 'far fa-heart'}" style="color: red;"></i>
+                                </a>    
                                 <div class="u-over-slide u-shading u-over-slide-1"></div>
                             </div>
                         `);

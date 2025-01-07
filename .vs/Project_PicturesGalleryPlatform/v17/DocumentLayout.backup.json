@@ -1,26 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\views\\login\\login - \u8907\u88FD.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\login\\login - \u8907\u88FD.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\views\\member\\myfavorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\member\\myfavorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\wwwroot\\js\\infinite-scroll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\js\\infinite-scroll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\views\\page\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\page\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-branch_tzuchun\\project_picturesgalleryplatform\\wwwroot\\js\\heart-btn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\js\\heart-btn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +46,116 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login - \u8907\u88FD.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
+              "Title": "MyFavorites.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\Member\\MyFavorites.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Member\\MyFavorites.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\Member\\MyFavorites.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Member\\MyFavorites.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T12:00:51.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImagesController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T11:18:56.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwEkAAAAeAQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T10:58:15.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SinglePic.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T10:46:29.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T13:11:02.619Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SinglePicController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAIwD4AAAAMAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIwAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T11:45:23.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Controllers\\PageController.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\PageController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Controllers\\PageController.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\PageController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwDQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T10:44:31.263Z",
+              "WhenOpened": "2025-01-07T11:41:58.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "infinite-scroll.js",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
+              "ViewState": "AgIAACMAAAAAAAAAAADwvzgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-07T11:32:42.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAvwDkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T11:54:02.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SinglePic.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAHYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T11:33:03.063Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\MemberController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwNUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T13:02:20.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "heart-btn.js",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\wwwroot\\js\\heart-btn.js",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\js\\heart-btn.js",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\wwwroot\\js\\heart-btn.js",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\js\\heart-btn.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-07T11:41:44.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-branch_tzuchun\\Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T12:05:41.402Z"
             }
           ]
         }
