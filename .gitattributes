@@ -1,0 +1,2 @@
+image_similarity_search.exe filter=lfs diff=lfs merge=lfs -text
+Model/* filter=lfs diff=lfs merge=lfs -text
