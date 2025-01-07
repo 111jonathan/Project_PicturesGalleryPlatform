@@ -12,25 +12,7 @@
         return urlParams.get(param);
     }
 
-    // 檢查用戶登入狀態
-    if (user) {
-        $.ajax({
-            url: '/SinglePic/ToggleImageLikeStatus',
-            type: 'GET',
-            data: { user: user },
-            success: function (data) {
-                if (data.isLoggedIn) {
-                    isLoggedIn = true;
-                }
-            },
-            error: function (error) {
-                console.error("檢查登入狀態失敗:", error);
-                alert("檢查登入狀態失敗，請稍後再試。");
-            }
-        });
-    } else {
-        alert("未提供用戶參數，無法檢查登入狀態。");
-    }
+
 
     // 點擊提交按鈕
     submitButton.addEventListener("click", async () => {

@@ -28,7 +28,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
         public IActionResult SinglePic(int id)
         {
 
-            ViewData["user"] = HttpContext.Session.GetString("UserId") != null;
+            //ViewData["user"] = HttpContext.Session.GetString("UserId") != null;
 
             var pictures = _imageService.GetImagesById(id);
             if (pictures == null)
