@@ -62,8 +62,14 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 TempData["controller"] = "Home";
                 return RedirectToAction("TransitionPage", "Universal");
             }
-            Console.WriteLine("Home//AIPictures接收到keyword: {0}", keyword);
-            TempData["keyword_AI"] = keyword;
+            var temps = (keyword.Trim()).Split(" ");// bug緊急維修01/07
+            string newKeyword = "";
+            foreach (var temp in temps)
+            {
+                newKeyword += temp;
+            }
+            Console.WriteLine("Home//AIPictures接收&處理後keyword: {0}", newKeyword);
+            TempData["keyword_AI"] = newKeyword;
             TempData.Keep("keyword_AI");
             return View("~/Views/Page/Result_AI.cshtml");// 待測試
         }
