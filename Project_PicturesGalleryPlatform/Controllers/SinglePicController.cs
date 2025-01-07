@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Project_PicturesGalleryPlatform.Models;
+using Project_PicturesGalleryPlatform.Models.AIPicturesModels;
 using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 using Project_PicturesGalleryPlatform.Services.ImageService;
 using Project_PicturesGalleryPlatform.Services.MyFavoritesService;
@@ -15,20 +18,22 @@ namespace Project_PicturesGalleryPlatform.Controllers
         //private readonly IMyFavoritesService _myFavoritesService;
         protected readonly IRatingService _ratingService;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly ApplicationDbContext _context;
 
-        public SinglePicController(ILogger<HomeController> logger, IImageService imageService, IRatingService ratingService, IWebHostEnvironment webHostEnvironment)
+        public SinglePicController(ILogger<HomeController> logger, IImageService imageService, IRatingService ratingService, IWebHostEnvironment webHostEnvironment, ApplicationDbContext context)
         {
             _logger = logger;
             _imageService = imageService;
             //_myFavoritesService = myFavoritesService;
             _ratingService = ratingService;
             _webHostEnvironment = webHostEnvironment;
+            _context = context;
         }
 
         public IActionResult SinglePic(int id)
         {
 
-            //ViewData["user"] = HttpContext.Session.GetString("UserId") != null;
+            ViewData["user"] = Request.Cookies["UserAccount"];
 
             var pictures = _imageService.GetImagesById(id);
             if (pictures == null)
@@ -39,52 +44,28 @@ namespace Project_PicturesGalleryPlatform.Controllers
             return View();
         }
 
-        // 檢查是否登入
-        [HttpGet]
-        public IActionResult ToggleImageLikeStatus()
-        {
-            // 嘗試從 Cookie 中獲取 "UserAccount" 值
-            string user = Request.Cookies["UserAccount"];
-
-            // 檢查用戶是否登入
-            bool isLoggedIn = !string.IsNullOrEmpty(user);
-
-            // 如果用戶已登入，您可以額外提供一些用戶資料
-            if (isLoggedIn)
-            {
-                // 假設您可以從用戶帳號取得用戶的其他資訊，例如用戶名
-                var userInfo = GetUserInfo(user); // 假設 GetUserInfo 會根據 UserAccount 返回用戶資料
-                return Json(new { isLoggedIn, userInfo });
-            }
-
-            // 如果用戶未登入，只返回登入狀態
-            return Json(new { isLoggedIn });
-        }
-
         // 假設有一個方法來根據用戶帳號獲取用戶資料
-        private object GetUserInfo(string userAccount)
-        {
-            // 這裡根據實際情況取得用戶資料，例如：
-            return new
-            {
-                UserName = "JohnDoe",  // 假設返回的用戶資料
-                Email = "johndoe@example.com"
-            };
-        }
 
 
         // 提交評分
         [HttpPost]
-        public IActionResult SubmitRating([FromBody] SinglePicViewModel model)
+        public async Task<IActionResult> SubmitRating([FromBody] SinglePicViewModel model)
         {
-            // 檢查用戶是否已登入
-            if (!User.Identity.IsAuthenticated)
+            // 檢查用戶是否登入
+            // 從 Cookie 中讀取 "UserAccount"
+            var userAccount = Request.Cookies["UserAccount"];
+            if (string.IsNullOrEmpty(userAccount))
             {
-                return Json(new { success = false, message = "您必須先登入才能進行評分。" });
+                return Json(new { success = false, message = "用戶尚未登入" });
+            }
+            // 查詢資料庫來獲取用戶名稱
+            var user = await _context.Members.FirstOrDefaultAsync(m => m.account == userAccount);
+            if (user == null)
+            {
+                return Json(new { success = false, message = "找不到用戶資料" });
             }
 
-            // 確保從 model 取得 username
-            var username = User.Identity.Name;  // 取當前用戶的 username
+            var username = user.account;
 
             // 驗證評分數據的有效性
             if (model == null || model.ProductId <= 0 || model.Rating < 1 || model.Rating > 5)
@@ -118,6 +99,7 @@ namespace Project_PicturesGalleryPlatform.Controllers
                 {
                     return Json(new { success = false, message = "儲存評分失敗，請稍後再試。" });
                 }
+
             }
             catch (Exception ex)
             {
@@ -129,15 +111,20 @@ namespace Project_PicturesGalleryPlatform.Controllers
             }
         }
 
-
-
-
         public class SinglePicViewModel
         {
-            public string username { get; set; }
             public int ProductId { get; set; }
             public byte Rating { get; set; }
+        }
 
+        public IActionResult SinglePic_AI(AIPicData aiPicData, string keyword)
+        {
+            Console.WriteLine("Single//Single_AI 接收參數: {0}&{1}", aiPicData, keyword);
+            // 處理數據
+            DataTransformer dataTransformer = new DataTransformer(aiPicData);
+            ImageDetails imageDetail = dataTransformer.Transform(keyword);
+            //ViewData["imageDetail"] = imageDetail;
+            return View(imageDetail);
         }
 
         public ActionResult DownloadFile(string picId)

@@ -30,4 +30,11 @@
     <Folder Include="wwwroot\images2\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Login\Login - 複製.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

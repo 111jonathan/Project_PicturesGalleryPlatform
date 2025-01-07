@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
 using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Services.ImageService;
+using Project_PicturesGalleryPlatform.Models.AIPicturesModels;
+
 using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 
 namespace Project_PicturesGalleryPlatform.Controllers
@@ -24,11 +27,11 @@ namespace Project_PicturesGalleryPlatform.Controllers
         {
             if (Request.Cookies.ContainsKey("UserAccount"))
             {
-                ViewBag.User = Request.Cookies["UserAccount"]; //  Cookies 腕妏蚚氪靡想
+                ViewBag.User = Request.Cookies["UserAccount"]; // �� Cookies ȡ��ʹ�������Q
             }
             else
             {
-                ViewBag.User = null; // 帤腎ㄛ偞离 null
+                ViewBag.User = null; // δ����r���O�Þ� null
             }
             // 載入資料庫評分表單
             var totalScores = _ratingService.GetUserTotalScore();
@@ -36,13 +39,28 @@ namespace Project_PicturesGalleryPlatform.Controllers
             return View();
         }
 
-        public IActionResult Logout()
+
+
+        [HttpPost]
+        public IActionResult AIPictures(string keyword)
         {
-            if (Request.Cookies.ContainsKey("UserAccount"))
-            {
-                Response.Cookies.Delete("UserAccount"); // 壺 UserAccount 腔 Cookie
+            if (string.IsNullOrWhiteSpace(keyword))
+            {// �Ȥ������ŭ�
+                TempData["feedbackMessage"] = "�п�J���Ī�����r�C";
+                TempData["action"] = "Index";
+                TempData["controller"] = "Home";
+                return RedirectToAction("TransitionPage", "Universal");
             }
-            return RedirectToAction("Index", "Home"); // 腎堤摽砃忑?
+            var temps = (keyword.Trim()).Split(" ");// bug������01/07
+            string newKeyword = "";
+            foreach (var temp in temps)
+            {
+                newKeyword += temp;
+            }
+            Console.WriteLine("Home//AIPictures����&�B�z��keyword: {0}", newKeyword);
+            TempData["keyword_AI"] = newKeyword;
+            TempData.Keep("keyword_AI");
+            return View("~/Views/Page/Result_AI.cshtml");// �ݴ���
         }
 
 
@@ -50,6 +68,14 @@ namespace Project_PicturesGalleryPlatform.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        public IActionResult Logout()
+        {
+            if (Request.Cookies.ContainsKey("UserAccount"))
+            {
+                Response.Cookies.Delete("UserAccount"); // �h�� UserAccount �� Cookie
+            }
+            return RedirectToAction("Index", "Home"); // �ǳ��ጧ����?
         }
     }
 }

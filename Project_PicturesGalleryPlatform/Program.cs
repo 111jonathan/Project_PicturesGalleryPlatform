@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Project_PicturesGalleryPlatform.Models;
 using Project_PicturesGalleryPlatform.Repositories;
 using Project_PicturesGalleryPlatform.Services;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Project_PicturesGalleryPlatform.Repositories.IRatingService;
 
 
@@ -21,7 +22,6 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
 builder.Services.AddScoped<IRatingService, RatingService>();
 builder.Services.AddScoped<IMyFavoritesRepository, MyFavoritesRepository>();
 builder.Services.AddScoped<IMyFavoritesService, MyFavoritesService>();
@@ -31,6 +31,10 @@ builder.Services.AddScoped<IImageService, ImageService>();
 
 builder.Services.AddScoped<IImageAnalysisService, ImageAnalysisService>();
 builder.Services.AddScoped<IPythonImageAnalysisExecutor, PythonImageAnalysisExecutor>();
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddSession();// for session
+builder.Services.AddSingleton<ITempDataProvider, SessionStateTempDataProvider>();// 使用session存取TempData
 
 var app = builder.Build();
 
@@ -42,6 +46,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();// for session
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

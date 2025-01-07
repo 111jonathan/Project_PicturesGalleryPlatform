@@ -1,34 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver6.2\\project_picturesgalleryplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver6.2\\project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\views\\login\\login - \u8907\u88FD.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\login\\login - \u8907\u88FD.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\singlepic\\singlepic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver6.2\\project_picturesgalleryplatform\\wwwroot\\js\\infinite-scroll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\js\\infinite-scroll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver6.2\\project_picturesgalleryplatform\\views\\page\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\views\\page\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver6.2\\project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver7\\project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\singlepiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver6.2\\project_picturesgalleryplatform\\wwwroot\\js\\picscore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\wwwroot\\js\\picscore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|c:\\users\\user\\desktop\\project_picturesgalleryplatform-ver6.2\\project_picturesgalleryplatform\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BE2FB88-62A8-46C8-B978-726C15DE5706}|Project_PicturesGalleryPlatform\\Project_PicturesGalleryPlatform.csproj|solutionrelative:project_picturesgalleryplatform\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,98 +29,72 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 211,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login - \u8907\u88FD.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Login\\Login - \u8907\u88FD.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T12:00:51.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "infinite-scroll.js",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\js\\infinite-scroll.js",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-07T05:01:29.301Z",
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\ImagesController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T11:18:56.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAEwAAABjAAAAAAAAAA==",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwEkAAAAeAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T05:00:48.004Z",
+              "WhenOpened": "2025-01-07T10:58:15.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Result.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\Page\\Result.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T04:59:51.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "SinglePic.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Views\\SinglePic\\SinglePic.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T03:26:42.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PicScore.js",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\wwwroot\\js\\PicScore.js",
-              "ViewState": "AgIAAEQAAAAAAAAAAADwvxMAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-07T03:26:12.574Z",
+              "WhenOpened": "2025-01-07T10:46:29.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "SinglePicController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
               "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver7\\Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
               "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\SinglePicController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAYwFAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwD4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T03:24:26.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Project_PicturesGalleryPlatform-Ver6.2\\Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Project_PicturesGalleryPlatform\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAQwD8AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T03:23:43.301Z",
+              "WhenOpened": "2025-01-07T10:44:31.263Z",
               "EditorCaption": ""
             }
           ]

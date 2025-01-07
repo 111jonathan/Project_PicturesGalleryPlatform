@@ -53,6 +53,32 @@
   },
   {
     "ContainingType": "Project_PicturesGalleryPlatform.Controllers.ImagesController",
+    "Method": "GetImagesByIds",
+    "RelativePath": "api/Images/SearchByIds",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project_PicturesGalleryPlatform.Controllers.ImagesController",
     "Method": "GetImagesByTag",
     "RelativePath": "api/Images/SearchByTag",
     "HttpMethod": "GET",

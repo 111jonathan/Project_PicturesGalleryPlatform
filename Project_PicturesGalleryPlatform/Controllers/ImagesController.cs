@@ -41,6 +41,13 @@ namespace Project_PicturesGalleryPlatform.Controllers
             var images = _imageService.GetImagesByTag(tag, page, pageSize);
             return Ok(UpdateFavoritedStatusForImages(images));
         }
+        [HttpGet("SearchByIds")]
+        public IActionResult GetImagesByIds([FromQuery] string ids, [FromQuery] int page, [FromQuery] int pageSize)
+        {
+            var idsList = ids.Split(',').Select(int.Parse).ToList();
+            var images = _imageService.GetImagesByIds(idsList, page, pageSize);
+            return Ok(UpdateFavoritedStatusForImages(images));
+        }
 
         // 根據用戶帳號獲取圖片並更新收藏狀態
         [HttpGet("Favorites")]

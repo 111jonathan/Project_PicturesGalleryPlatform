@@ -20,6 +20,7 @@ wwwroot\css\styles.css
 wwwroot\css\tech.css
 wwwroot\css\Thank-You-Page-Template.css
 wwwroot\css\upload.css
+wwwroot\exe\image_similarity_search.py
 wwwroot\favicon.ico
 wwwroot\images\0fd3416c.jpeg
 wwwroot\images\125902.jpg
@@ -589,10 +590,13 @@ wwwroot\images2\98.webp
 wwwroot\images2\99.webp
 wwwroot\js\heart-btn.js
 wwwroot\js\infinite-scroll.js
+wwwroot\js\infinite-scroll-AI.js
+wwwroot\js\jquery.js
 wwwroot\js\MyFavorites.js
 wwwroot\js\nicepage.js
 wwwroot\js\PicScore.js
 wwwroot\js\site.js
+wwwroot\js\validation.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
